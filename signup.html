@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Digital Marketing </title>
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="login-signup.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Space+Grotesk:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+    <div id="header-wrapper">
+        <header id="header">
+            <div class="head-cls">
+                <a href="index.html" class="head-logo">
+                    <img src="./assets/Stackly-logo-green.webp" alt="Stackly Logo" class="logo">
+                    <div class="hero-overlay"></div>
+                </a>
+
+                <div class="menu-items" id="navMenu">
+                    <a href="index.html">Home</a>
+                    <a href="404page.html">About</a>
+                    <a href="404page.html">Service</a>
+                    <a href="404page.html">Blog</a>
+                    <a href="404page.html">Contact</a>
+                    <div class="close-btn material-icons" id="closeMenu">close</div>
+                    <div class="head-btn mob-view">
+                        <a href="404page.html" class="btn-primary">Let's Talk</a>
+                        <a href="login.html" class="btn-secondary">Login</a>
+                    </div>
+                </div>
+
+                <div class="head-btn">
+                    <a href="404page.html" class="btn-primary">Let's Talk</a>
+                    <a href="login.html" class="btn-secondary active">Login</a>
+                </div>
+
+                <div class="head-scroll-btn">
+                    <a href="tel:0987654321" class="head-call">
+                        <span class="material-icons">call</span>
+                        <div>Call Anytime
+                            <span>0987654321</span>
+                        </div>
+                    </a>
+                    <a href="login.html" class="btn-secondary active">Login</a>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span class="material-icons">menu</span>
+                </div>
+            </div>
+        </header>
+    </div>
+    <section class="login">
+        <div class="login-container">
+            <div class="login-img-container fade-left">
+                <img src="./assets/signup1.webp" alt="Login Color" loading="lazy">
+                <div class="login-img-overlay">
+                    <div class="badge">
+                        <i class="fa-solid fa-rocket"></i>
+                    </div>
+
+                    <h3 class="overlay-title">Accelerate Your Growth.</h3>
+
+                    <p class="overlay-text">
+                        Join Stackly today to access your personalized digital command center.  
+                    </p>
+
+                    <div class="overlay-benefits">
+                        <div class="benefit-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Real-time Analytics</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Direct Team Access</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Secure Campaign Data</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="login-content-container fade-right">
+                <h2>Create an Account</h2>
+                <p>Enter your details to get started</p>
+
+                <form id="signup-form">
+                    <div class="input-content-container">
+
+                        <div class="input-container">
+                            <span class="material-icons icon-left">person</span>
+                            <input type="text" id="name_input" class="input-style" placeholder=" " />
+                            <label class="input-label" for="name_input">Full Name</label>
+                        </div>
+
+                        <div class="input-container">
+                            <span class="material-icons icon-left">email</span>
+                            <input type="email" id="signup_email_input" class="input-style" placeholder=" " />
+                            <label class="input-label" for="signup_email_input">Email Address</label>
+                        </div>
+
+                        <div class="input-container">
+                            <span class="material-icons icon-left">lock</span>
+                            <input type="password" id="signup_password_input" class="input-style"
+                                placeholder=" " />
+                            <label class="input-label" for="signup_password_input">Create Password</label>
+                        </div>
+
+                        <div class="input-container">
+                            <span class="material-icons icon-left">lock</span>
+                            <input type="password" id="confirm_password_input" class="input-style"
+                                placeholder=" " />
+                            <label class="input-label" for="confirm_password_input">Confirm Password</label>
+                        </div>
+
+                    </div>
+
+                    <button type="submit" class="btn-primary" style="width: 100%; margin-top: 24px;">Sign Up</button>
+                </form>
+
+                <div id="toast-container"></div>
+
+                <div class="login-btn">
+                    <a href="404page.html" class="btn-secondary"> <i class="fa-brands fa-google"></i> Sign up with
+                        Google</a>
+                    <a href="404page.html" class="btn-secondary"><i class="fa-brands fa-facebook"></i> Sign up with
+                        Facebook</a>
+                </div>
+
+                <div class="new-acc">
+                    Already have an account?
+                    <a href="login.html">Login here</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+    <script src="./script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const signupForm = document.getElementById('signup-form');
+
+            if (signupForm) {
+                const nameInput = document.getElementById('name_input');
+                const emailInput = document.getElementById('signup_email_input');
+                const passwordInput = document.getElementById('signup_password_input');
+                const confirmPasswordInput = document.getElementById('confirm_password_input');
+                const toastContainer = document.getElementById('toast-container');
+
+                signupForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+
+                    const name = nameInput.value.trim();
+                    const email = emailInput.value.trim();
+                    const password = passwordInput.value.trim();
+                    const confirmPassword = confirmPasswordInput.value.trim();
+
+                    // 1. Validate Name
+                    if (!name) {
+                        showToast('Please enter your full name.', 'error', 'person_off');
+                        return;
+                    }
+
+                    // 2. Validate Email
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!email || !emailRegex.test(email)) {
+                        showToast('Please enter a valid email address.', 'error', 'alternate_email');
+                        return;
+                    }
+
+                    // 3. Validate Password Length
+                    if (password.length < 6) {
+                        showToast('Password must be at least 6 characters.', 'error', 'warning_amber');
+                        return;
+                    }
+
+                    // 4. Validate Password Match
+                    if (password !== confirmPassword) {
+                        showToast('Passwords do not match.', 'error', 'gpp_bad');
+                        return;
+                    }
+
+                    // 5. Success State
+                    showToast('Account created successfully!', 'success', 'check_circle');
+
+                    // For your PG project, you would trigger the API call here to save to MSSQL via .NET
+                    setTimeout(() => { window.location.href = "login.html"; }, 2000);
+                });
+
+                // Dynamic Toast Creator (Same as the login page)
+                function showToast(message, type, iconName) {
+                    const toast = document.createElement('div');
+                    toast.classList.add('toast', type);
+
+                    toast.innerHTML = `
+                <span class="material-icons">${iconName}</span>
+                <span>${message}</span>
+            `;
+
+                    toastContainer.appendChild(toast);
+
+                    setTimeout(() => {
+                        toast.classList.add('fade-out');
+                        toast.addEventListener('animationend', () => {
+                            toast.remove();
+                        });
+                    }, 3500);
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
