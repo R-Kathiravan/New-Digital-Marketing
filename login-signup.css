@@ -94,6 +94,7 @@
     border: 5px outset #7dfa4f81;
     /* height: 80vh; */
     padding: 30px;
+    overflow-x: hidden;
 }
 
 .login-content-container {
@@ -207,7 +208,9 @@ a {
 }
 
 @media (max-width:876px) {
-
+    .login{
+        padding: 8px;
+    }
 
     .login-container {
         padding: 10px;
@@ -215,7 +218,7 @@ a {
 
     .login-content-container {
         width: 100%;
-        padding: 30px;
+        padding: 20px;
     }
 
     .login-btn {

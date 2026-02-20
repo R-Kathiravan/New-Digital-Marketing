@@ -101,21 +101,21 @@ document.addEventListener('DOMContentLoaded', () => {
 const isMobile = window.innerWidth < 768;
 
 const lenis = new Lenis({
-    duration: isMobile ? 2.5 : 1.6,   
+    duration: isMobile ? 2.5 : 1.6,
     easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-    smoothTouch: true  
+    smoothTouch: true
 });
 
 
- lenis.on('scroll', ScrollTrigger.update);
+lenis.on('scroll', ScrollTrigger.update);
 
- gsap.ticker.add((time) => {
+gsap.ticker.add((time) => {
     lenis.raf(time * 1000);
 });
 
- gsap.ticker.lagSmoothing(0);
+gsap.ticker.lagSmoothing(0);
 
- 
+
 const floaters = document.querySelectorAll('.floater');
 
 floaters.forEach((floater) => {
@@ -156,5 +156,87 @@ gsap.from(".reveal-text ", {
     scrollTrigger: {
         trigger: ".reveal-text",
         start: "top 85%",
+    }
+});
+
+const sectionHeaders = document.querySelectorAll('.head-desc');
+
+ sectionHeaders.forEach((header) => {
+ 
+    const splitText = new SplitType(header, { types: 'words' });
+ 
+    gsap.from(splitText.words, {
+        scrollTrigger: {
+            trigger: header,       
+            start: 'top 85%',      
+            toggleActions: 'play none none reverse'
+        },
+        y: 40,                    
+        opacity: 0,               
+        duration: 0.8,            
+        ease: 'power3.out',       
+        stagger: 0.08             
+    });
+});
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const contactForm = document.getElementById('contact-form');
+    const toastContainer = document.getElementById('toast-container');
+
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('contact_name').value.trim();
+            const email = document.getElementById('contact_email').value.trim();
+            const service = document.getElementById('contact_service').value;
+            const message = document.getElementById('contact_message').value.trim();
+
+            if (!name) {
+                showToast('Please enter your name.', 'error', 'person_off');
+                return;
+            }
+
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!email || !emailRegex.test(email)) {
+                showToast('Please enter a valid email address.', 'error', 'alternate_email');
+                return;
+            }
+
+            if (!service) {
+                showToast('Please select a service you are interested in.', 'error', 'work_off');
+                return;
+            }
+
+            if (message.length < 20) {
+                showToast('Please provide a bit more detail (minimum 20 characters).', 'error', 'short_text');
+                return;
+            }
+
+            showToast('Message sent! We will contact you shortly.', 'success', 'send');
+
+            contactForm.reset();
+
+        });
+    }
+
+    function showToast(message, type, iconName) {
+        const toast = document.createElement('div');
+        toast.classList.add('toast', type);
+
+        toast.innerHTML = `
+            <span class="material-icons">${iconName}</span>
+            <span>${message}</span>
+        `;
+
+        toastContainer.appendChild(toast);
+
+        setTimeout(() => {
+            toast.classList.add('fade-out');
+            toast.addEventListener('animationend', () => {
+                toast.remove();
+            });
+        }, 3500);
     }
 });

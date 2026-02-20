@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Digital Marketing </title>
     <link rel="stylesheet" href="shared.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="service.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
@@ -31,9 +31,9 @@
                 </a>
 
                 <div class="menu-items" id="navMenu">
-                    <a href="index.html" class="active">Home</a>
+                    <a href="index.html">Home</a>
                     <a href="about.html">About</a>
-                    <a href="service.html">Service</a>
+                    <a href="service.html" class="active">Service</a>
                     <a href="404page.html">Blog</a>
                     <a href="404page.html">Contact</a>
                     <div class="close-btn material-icons" id="closeMenu">close</div>
@@ -63,148 +63,114 @@
             </div>
         </header>
     </div>
-    <section class="hero">
-        <div class="hero-container">
-            <div class="hero-content-container">
-                <div class="chips">Welcome to Stackly</div>
-                <div class="hero-head text-gradient reveal-text floater" data-speed=""> Ignite Your Online Performance
+    <section class="hero-sec">
+        <div class="sec-hero-container">
+            <h1>Services</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="material-icons">double_arrow</span>
+                <a href="about.html" class="active">Services</a>
+            </div>
+        </div>
+    </section>
+    <section class="services-detail-section">
+        <div class="services-container floater">
+            <div class="service-block">
+                <div class="service-image fade-left">
+                    <img src="./assets/about-seo.webp" alt="SEO Strategy">
+                    <div class="service-glow"></div>
                 </div>
-                <div class="hero-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi nostrum
-                    perferendis quos odio cumque temporibus. Eius, tenetur. Veritatis, recusandae. Sequi.</div>
-                <div class="hero-btn floater">
-                    <a href="404page.html" class="btn-primary">Contact Us</a>
-                    <a href="404page.html" class="play-btn">
-                        <span class="material-icons">play_arrow</span>
+                <div class="service-content fade-right">
+                    <div class="chips">Organic Growth</div>
+                    <h2 class="head-desc">Search Engine <span class="italic">Optimization</span></h2>
+                    <p>
+                        Stop renting your traffic and start owning it. We build comprehensive, data-driven SEO
+                        architectures that push your brand to the top of search results and keep it there.
+                    </p>
+                    <ul class="deliverable-list">
+                        <li><span class="material-icons">check_circle</span> Deep Technical Audits</li>
+                        <li><span class="material-icons">check_circle</span> High-Intent Keyword Strategy</li>
+                        <li><span class="material-icons">check_circle</span> Authority Backlink Building</li>
+                    </ul>
+
+                    <a href="contact.html" class="btn-secondary" style="margin-top: 20px; display: inline-flex;">
+                        Get an SEO Audit <span class="material-icons"
+                            style="margin-left: 8px; font-size: 18px;">arrow_forward</span>
                     </a>
                 </div>
             </div>
-            <div class="hero-img-container fade-right">
-                <img src="./assets/hero1.webp" alt="Hero Img" loading="lazy" class="floater" data-speed="">
+
+            <div class="service-block">
+                <div class="service-image fade-right">
+                    <img src="./assets/service-img2.webp" alt="Paid Advertising">
+                    <div class="service-glow"></div>
+                </div>
+
+                <div class="service-content fade-left">
+                    <div class="chips">Paid Acquisition</div>
+                    <h2 class="head-desc">Performance <span class="italic">Marketing</span></h2>
+                    <p>
+                        Precision-targeted ad campaigns designed for one thing: maximum Return on Ad Spend (ROAS). We
+                        eliminate wasted budget and scale the channels that actually convert.
+                    </p>
+
+                    <ul class="deliverable-list">
+                        <li><span class="material-icons">check_circle</span> Google & Meta Ads Management</li>
+                        <li><span class="material-icons">check_circle</span> Conversion Rate Optimization (CRO)</li>
+                        <li><span class="material-icons">check_circle</span> A/B Testing & Retargeting</li>
+                    </ul>
+
+                    <a href="contact.html" class="btn-secondary" style="margin-top: 20px; display: inline-flex;">
+                        Scale Your Ads <span class="material-icons"
+                            style="margin-left: 8px; font-size: 18px;">arrow_forward</span>
+                    </a>
+                </div>
             </div>
+
         </div>
     </section>
-    <section class="about">
-        <div class="section-header-container">
-            <div class="section-header floater" data-speed="1">
-                <div class="chips">About Us</div>
-                <div class="head-desc">We blend creativity and technology to build <span class="italic"> digital
-                        experiences</span></div>
-            </div>
-            <div class="section-head-btn floater" data-speed="0.7">
-                <p class="sec-head-right">75+
-                    <span>Projects Completed</span>
-                </p>
-                <p class="sec-head-right right-min">25+
-                    <span>Industry Experience</span>
-                </p>
-            </div>
-        </div>
-        <div class="about-container">
-            <div class="about-left floater" data-speed="1.3">
-                <div class="about-desc">We believe in innovation, collaboration, and data-driven design to help
-                    clients stand out in a digital world.</div>
-                <div class="about-stats-con">
-                    <div class="about-stats">
-                        <h3>10M+</h3>
-                        <span>Raised More than</span>
-                    </div>
-                    <div class="about-avatars">
-                        <div class="hero-user-avatars">
-                            <img src="./assets/review1.webp" alt="User 1">
-                            <img src="./assets/review3.webp" alt="User 2">
-                            <img src="./assets/review2.webp" alt="User 3">
-                            <img src="./assets/review4.webp" alt="User 4">
-                            <div class="more-users">+2.5k</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="about-middle">
-                <div class="about-img-container">
-                    <img src="./assets/about2.webp" alt="About Img" loading="lazy">
-                    <div class="about-img-overlay floater" data-speed="1.5">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quaerat minima autem illo vero
-                        ipsa et cum nostrum repellendus distinctio?
-                    </div>
-                </div>
-            </div>
-            <div class="about-right floater" data-speed="1.2">
-                <div class="about-card-container">
-                    <span class="material-icons">rocket_launch</span>
-                    <div class="about-card-content">
-                        <h3>Creative</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, optio!</p>
-                    </div>
-                </div>
-                <div class="about-card-container">
-                    <span class="material-icons">rocket_launch</span>
-                    <div class="about-card-content">
-                        <h3>Creative</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, optio!</p>
-                    </div>
-                </div>
-                <a href="404page.html" class="btn-primary"> More About Us</a>
-            </div>
-        </div>
-    </section>
-    <section class="services container">
-        <div class="section-header-container">
-            <div class="section-header">
-                <div class="chips">Services</div>
-                <div class="head-desc">We craft user-focused digital experiences <span class="italic"> that elevate
-                        brands</span></div>
-            </div>
-            <div class="sec-head-btn">
-                <a href="service.html" class="sec-head-right"> More Services
-                    <span class="material-icons">arrow_outward</span>
-                </a>
-            </div>
-        </div>
-        <div class="services-container">
+    <section class="tech-stack-section">
+        <div class="tech-stack-container">
 
-            <a class="services-content-container">
-                <div class="services-no">01.</div>
-                <div class="services-head">Brand Strategy & Positioning</div>
-                <div class="services-img">
-                    <img src="./assets/about1.webp" alt="Brand Strategy">
-                </div>
-                <div class="services-arrow">
-                    <span class="material-icons">arrow_outward</span>
-                </div>
-            </a>
+            <div class="tech-header">
+                <div class="chips">Our Arsenal</div>
+                <h2 class="head-desc">Powered by <span class="italic">Industry-Leading</span> Tech</h2>
+                <p>We don't rely on guesswork. Our team leverages enterprise-grade software to architect, execute, and
+                    scale your campaigns.</p>
+            </div>
 
-            <a class="services-content-container">
-                <div class="services-no">02.</div>
-                <div class="services-head">Performance Marketing</div>
-                <div class="services-img">
-                    <img src="./assets/about2.webp" alt="Performance Marketing">
+            <div class="tech-grid">
+                <div class="tech-item" title="Google Analytics & Ads">
+                    <i class="fa-brands fa-google tech-icon"></i>
+                    <span class="tech-name">Google</span>
                 </div>
-                <div class="services-arrow">
-                    <span class="material-icons">arrow_outward</span>
-                </div>
-            </a>
 
-            <a class="services-content-container">
-                <div class="services-no">03.</div>
-                <div class="services-head">SEO & Growth Optimization</div>
-                <div class="services-img">
-                    <img src="./assets/hero1.webp" alt="SEO Services">
+                <div class="tech-item" title="Meta Business Suite">
+                    <i class="fa-brands fa-meta tech-icon"></i>
+                    <span class="tech-name">Meta</span>
                 </div>
-                <div class="services-arrow">
-                    <span class="material-icons">arrow_outward</span>
-                </div>
-            </a>
 
-            <a class="services-content-container">
-                <div class="services-no">04.</div>
-                <div class="services-head">UI/UX & Web Experience</div>
-                <div class="services-img">
-                    <img src="./assets/about2.webp" alt="UI UX Design">
+                <div class="tech-item" title="Figma UI/UX">
+                    <i class="fa-brands fa-figma tech-icon"></i>
+                    <span class="tech-name">Figma</span>
                 </div>
-                <div class="services-arrow">
-                    <span class="material-icons">arrow_outward</span>
+
+                <div class="tech-item" title="HubSpot CRM">
+                    <i class="fa-brands fa-hubspot tech-icon"></i>
+                    <span class="tech-name">HubSpot</span>
                 </div>
-            </a>
+
+                <div class="tech-item" title="WordPress CMS">
+                    <i class="fa-brands fa-wordpress tech-icon"></i>
+                    <span class="tech-name">WordPress</span>
+                </div>
+
+                <div class="tech-item" title="Mailchimp Automation">
+                    <i class="fa-brands fa-mailchimp tech-icon"></i>
+                    <span class="tech-name">Mailchimp</span>
+                </div>
+            </div>
+
         </div>
     </section>
     <div class="choose">
@@ -378,83 +344,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section class="testimonial">
-        <div class="testimonial-section" data-aos="fade" data-aos-delay="200">
-            <div class="testimonial-container floater">
-
-                <div class="testimonial-left">
-                    <div class="section-header-container">
-                        <div class="section-header">
-                            <div class="chips">Testimonial</div>
-                            <div class="head-desc">Discover the artistry behind <span class="italic"> our
-                                    projects</span></div>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-avatars">
-                        <img src="./assets/team1.webp" alt="User 1" class="avatar-thumb active" data-index="0">
-                        <img src="./assets/team2.webp" alt="User 2" class="avatar-thumb" data-index="1">
-                        <img src="./assets/team3.webp" alt="User 3" class="avatar-thumb" data-index="2">
-                        <img src="./assets/team4.webp" alt="User 4" class="avatar-thumb" data-index="3">
-                        <img src="./assets/team5.webp" alt="User 5" class="avatar-thumb" data-index="4">
-                    </div>
-                </div>
-
-                <div class="testimonial-right">
-                    <div class="review-card" id="reviewCard">
-                        <div class="quote-icon"><span class="material-icons">format_quote</span></div>
-
-                        <p class="review-text" id="reviewText">"This banking app completely changed how I manage my
-                            startup's finances. The instant transfers are a lifesaver!"</p>
-
-                        <div class="reviewer-info">
-                            <img src="./assets/team1.webp" alt="Active User" id="reviewerImg">
-                            <div class="reviewer-details">
-                                <h4 id="reviewerName">Sarah Jenkins</h4>
-                                <span id="reviewerRole">CEO, TechFlow</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <section class="brands-section">
-        <div class="brands-container floater">
-            <p class="brands-title">Trusted by innovative companies worldwide</p>
-
-            <div class="brands-grid">
-
-                <div class="brand-cell">
-                    <i class="fa-brands fa-apple brand-logo"></i>
-                </div>
-                <div class="brand-cell">
-                    <i class="fa-brands fa-microsoft brand-logo"></i>
-                </div>
-                <div class="brand-cell">
-                    <i class="fa-brands fa-amazon brand-logo"></i>
-                </div>
-                <div class="brand-cell">
-                    <i class="fa-brands fa-spotify brand-logo"></i>
-                </div>
-
-                <div class="brand-cell">
-                    <i class="fa-brands fa-slack brand-logo"></i>
-                </div>
-                <div class="brand-cell">
-                    <i class="fa-brands fa-figma brand-logo"></i>
-                </div>
-                <div class="brand-cell">
-                    <i class="fa-brands fa-google brand-logo"></i>
-                </div>
-                <div class="brand-cell">
-                    <i class="fa-brands fa-meta brand-logo"></i>
-                </div>
-
             </div>
         </div>
     </section>
@@ -657,69 +546,6 @@
             </div>
         </section>
     </div>
-    <section class="contact container">
-        <div class="section-header-container">
-            <div class="section-header">
-                <div class="chips">Get in Touch</div>
-                <div class="head-desc">Success is a team effort <span class="italic">let's Connect</span></div>
-            </div>
-            <div class="sec-head-btn">
-                <a href="404page.html" class="sec-head-right">
-                    <span class="material-icons">call</span>
-                    +919342575899
-                </a>
-            </div>
-        </div>
-        <div class="contact-section">
-            <div class="contact-header">
-                <h2>Let's Talk Growth.</h2>
-                <p>Fill out the form below and our team will get back to you within 24 hours.</p>
-            </div>
-
-            <form id="contact-form">
-                <div class="input-content-container">
-
-                    <div class="input-container">
-                        <span class="material-icons icon-left">person</span>
-                        <input type="text" id="contact_name" class="input-style" placeholder=" " />
-                        <label class="input-label" for="contact_name">Your Name</label>
-                    </div>
-
-                    <div class="input-container">
-                        <span class="material-icons icon-left">email</span>
-                        <input type="email" id="contact_email" class="input-style" placeholder=" " />
-                        <label class="input-label" for="contact_email">Email Address</label>
-                    </div>
-
-                    <div class="input-container">
-                        <span class="material-icons icon-left">work</span>
-                        <select id="contact_service" class="input-style select-dropdown">
-                            <option value="" disabled selected>What do you need help with?</option>
-                            <option value="seo">SEO & Organic Ranking</option>
-                            <option value="ads">Paid Advertising (PPC)</option>
-                            <option value="social">Social Media Management</option>
-                            <option value="web">Web Design & Development</option>
-                        </select>
-                    </div>
-
-                    <div class="input-container textarea-container">
-                        <span class="material-icons icon-left textarea-icon">chat</span>
-                        <textarea id="contact_message" class="input-style" rows="5" placeholder=" "></textarea>
-                        <label class="input-label textarea-label" for="contact_message">Tell us about your
-                            project...</label>
-                    </div>
-
-                </div>
-
-                <button type="submit" class="btn-primary" style="width: 100%; margin-top: 24px;">
-                    Send Message <span class="material-icons" style="font-size: 18px; margin-left: 8px;">send</span>
-                </button>
-            </form>
-        </div>
-
-        <div id="toast-container"></div>
-    </section>
-
     <section class="cta">
         <div class="cta-img floater">
             <img src="./assets/cta-bg1.webp" alt="CTA IMG" loading="lazy">
@@ -787,96 +613,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/split-type"></script>
     <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
     <script>
-        const cards = document.querySelectorAll(".services-content-container");
-
-        cards.forEach(card => {
-            const img = card.querySelector(".services-img");
-
-            card.addEventListener("mousemove", (e) => {
-                img.style.top = e.offsetY + "px";
-            });
-        });
-        document.addEventListener("DOMContentLoaded", () => {
-             const reviews = [
-                {
-                    text: "Stackly completely transformed our digital presence. Our conversion rates doubled in just two months, and the dashboard makes tracking ROI effortless.",
-                    name: "Sarah Jenkins",
-                    role: "CEO, TechFlow",
-                    img: "./assets/team1.webp"
-                },
-                {
-                    text: "The SEO strategy they implemented was a game-changer. We went from page 5 to ranking #1 for our main keywords in under a quarter.",
-                    name: "Michael Chen",
-                    role: "Founder, DesignStudio",
-                    img: "./assets/team2.webp"
-                },
-                {
-                    text: "Their paid ad campaigns are incredibly dialed in. We've seen a 300% increase in ROAS since they took over our Facebook and Google Ads.",
-                    name: "Jessica Alverez",
-                    role: "Marketing Director",
-                    img: "./assets/team3.webp"
-                },
-                {
-                    text: "Our social media engagement skyrocketed. They don't just post content; they build a community that actually converts into paying customers.",
-                    name: "David Ross",
-                    role: "E-commerce Founder",
-                    img: "./assets/team4.webp"
-                },
-                {
-                    text: "From the new website launch to the email marketing automation, the team handled everything flawlessly. Communication was top-notch.",
-                    name: "Emily Blunt",
-                    role: "Small Business Owner",
-                    img: "./assets/team5.webp"
-                }
-            ];
-
-             const avatars = document.querySelectorAll('.avatar-thumb');
-            const reviewCard = document.getElementById('reviewCard');
-            const reviewText = document.getElementById('reviewText');
-            const reviewerName = document.getElementById('reviewerName');
-            const reviewerRole = document.getElementById('reviewerRole');
-            const reviewerImg = document.getElementById('reviewerImg');
-
-            let currentIndex = 0;
-            const intervalTime = 4000; 
-            let interval;
-
-            function updateTestimonial(index) {
-                avatars.forEach(avatar => avatar.classList.remove('active'));
-
-                avatars[index].classList.add('active');
-
-                reviewCard.classList.add('fade-out');
-
-                setTimeout(() => {
-                    const data = reviews[index];
-                    reviewText.textContent = `"${data.text}"`;
-                    reviewerName.textContent = data.name;
-                    reviewerRole.textContent = data.role;
-                    reviewerImg.src = data.img;
-
-                    reviewCard.classList.remove('fade-out');
-                }, 400);
-            }
-
-            function nextTestimonial() {
-                currentIndex = (currentIndex + 1) % reviews.length;
-                updateTestimonial(currentIndex);
-            }
-
-            interval = setInterval(nextTestimonial, intervalTime);
-
-            avatars.forEach((avatar, index) => {
-                avatar.addEventListener('click', () => {
-                    clearInterval(interval);
-                    currentIndex = index;
-                    updateTestimonial(currentIndex);
-                    interval = setInterval(nextTestimonial, 10000);
-                });
-            });
-        });
         document.addEventListener('DOMContentLoaded', () => {
             const faq_headers = document.querySelectorAll('.faq-header');
 
@@ -893,7 +631,6 @@
                 });
             });
         });
-
     </script>
 </body>
 
