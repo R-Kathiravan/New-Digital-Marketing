@@ -266,7 +266,7 @@
     font-size: 50px;
     color: var(--text-secondary);
     position: absolute;
-    z-index: -1;
+    /* z-index: -1; */
     top: -20px;
     transition: all 0.3s ease;
 }
@@ -302,12 +302,15 @@
 
 @media (max-width:678px) {
     .choose-us-content-container {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
         padding: 20px;
     }
 
     .choose-us-card {
         padding: 20px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 }
 

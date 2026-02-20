@@ -668,6 +668,13 @@
     .projects-content-container {
         width: 100%;
     }
+
+    .projects-overlay-head {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
 }
 
 

@@ -127,7 +127,7 @@
     height: 600px;
     object-fit: cover;
     border-radius: 30px;
-
+    filter: blur(2.4px) opacity(0.7);
 }
 
 .login-img-overlay {
@@ -208,7 +208,7 @@ a {
 }
 
 @media (max-width:876px) {
-    .login{
+    .login {
         padding: 8px;
     }
 
