@@ -15,6 +15,62 @@
     --font-body: 'DM Sans', sans-serif;
 }
 
+.home-nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.home-btn {
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.dropdown-icon {
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--gold);
+    transition: 0.3s ease;
+}
+
+.dropdown-icon.rotate {
+    transform: rotate(180deg);
+}
+
+.home-select {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    border: 1px solid #555454;
+    border-radius: 10px;
+    min-width: max-content;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 100;
+}
+
+.home-select.show {
+    display: block;
+}
+
+.home-select a {
+    display: block;
+    padding: 10px 14px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.home-select a:hover {
+    color: var(--green-highlight);
+}
+
 .hero {
     padding: 30px 40px;
 }
@@ -56,6 +112,7 @@
 
 .hero-btn {
     display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 20px;
 }

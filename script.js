@@ -18,7 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
         lenis.start();
 
     }
-
+    if (!hamburger) return;
+    if(!closeMenu) return;
     hamburger.addEventListener("click", openMenu);
     closeMenu.addEventListener("click", closeNav);
 
@@ -161,21 +162,21 @@ gsap.from(".reveal-text ", {
 
 const sectionHeaders = document.querySelectorAll('.head-desc');
 
- sectionHeaders.forEach((header) => {
- 
+sectionHeaders.forEach((header) => {
+
     const splitText = new SplitType(header, { types: 'words' });
- 
+
     gsap.from(splitText.words, {
         scrollTrigger: {
-            trigger: header,       
-            start: 'top 85%',      
+            trigger: header,
+            start: 'top 85%',
             toggleActions: 'play none none reverse'
         },
-        y: 40,                    
-        opacity: 0,               
-        duration: 0.8,            
-        ease: 'power3.out',       
-        stagger: 0.08             
+        y: 40,
+        opacity: 0,
+        duration: 0.8,
+        ease: 'power3.out',
+        stagger: 0.08
     });
 });
 

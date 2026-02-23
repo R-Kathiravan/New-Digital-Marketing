@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Digital Marketing </title>
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Space+Grotesk:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="dashboard-wrapper">
+
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <a href="index.html">
+                    <img src="./assets/Stackly-logo-green.webp" alt="LOGO" class="logo">
+                </a>
+            </div>
+
+            <nav class="sidebar-nav">
+                <div class="nav-section">MAIN</div>
+                <a href="404page.html" class="nav-link active">
+                    <span class="material-icons">dashboard</span> Overview
+                </a>
+                <a href="404page.html" class="nav-link">
+                    <span class="material-icons">shopping_cart</span> Orders
+                </a>
+                <a href="404page.html" class="nav-link">
+                    <span class="material-icons">inventory_2</span> Products
+                </a>
+                <a href="404page.html" class="nav-link">
+                    <span class="material-icons">people</span> Customers
+                </a>
+
+                <div class="nav-section" style="margin-top: 30px;">SETTINGS</div>
+                <a href="404page.html" class="nav-link">
+                    <span class="material-icons">settings</span> Preferences
+                </a>
+                <a href="404page.html" class="nav-link logout-link">
+                    <span class="material-icons">logout</span> Sign Out
+                </a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+
+            <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+            <header class="topbar">
+                <div class="topbar-left">
+                    <button class="icon-btn mobile-menu-btn" id="mobileMenuBtn">
+                        <span class="material-icons">menu</span>
+                    </button>
+
+                    <a href="index.html">← Back to Home</a>
+                </div>
+
+                <div class="topbar-actions">
+                    <button class="icon-btn hide-on-mobile"><span class="material-icons">notifications</span></button>
+                    <div class="user-profile">
+                        <img src="./assets/team5.webp" alt="Admin" class="avatar">
+                        <span class="hide-on-mobile">Admin</span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="dashboard-inner">
+                <div class="page-header">
+                    <h1>Store Overview</h1>
+                    <p>Welcome back! Here's what's happening today.</p>
+                </div>
+
+                <div class="kpi-grid">
+                    <div class="kpi-card">
+                        <div class="kpi-header">
+                            <span class="kpi-title">Total Revenue</span>
+                            <span class="material-icons kpi-icon">payments</span>
+                        </div>
+                        <h3 class="kpi-value">$24,590.00</h3>
+                        <p class="kpi-trend positive"><span class="material-icons">trending_up</span> +12.5% this week
+                        </p>
+                    </div>
+
+                    <div class="kpi-card">
+                        <div class="kpi-header">
+                            <span class="kpi-title">Active Orders</span>
+                            <span class="material-icons kpi-icon">local_shipping</span>
+                        </div>
+                        <h3 class="kpi-value">1,245</h3>
+                        <p class="kpi-trend positive"><span class="material-icons">trending_up</span> +5.2% this week
+                        </p>
+                    </div>
+
+                    <div class="kpi-card">
+                        <div class="kpi-header">
+                            <span class="kpi-title">Avg. Order Value</span>
+                            <span class="material-icons kpi-icon">receipt_long</span>
+                        </div>
+                        <h3 class="kpi-value">$85.20</h3>
+                        <p class="kpi-trend negative"><span class="material-icons">trending_down</span> -1.4% this week
+                        </p>
+                    </div>
+
+                    <div class="kpi-card">
+                        <div class="kpi-header">
+                            <span class="kpi-title">Conversion Rate</span>
+                            <span class="material-icons kpi-icon">bar_chart</span>
+                        </div>
+                        <h3 class="kpi-value">3.8%</h3>
+                        <p class="kpi-trend positive"><span class="material-icons">trending_up</span> +0.5% this week
+                        </p>
+                    </div>
+                </div>
+                <div class="dashboard-widgets-grid">
+
+                    <div class="widget-card chart-widget">
+                        <div class="widget-header">
+                            <h3>Revenue Analytics</h3>
+                        </div>
+
+                        <div class="chart-placeholder">
+                            <div class="mock-chart">
+                                <div class="bar" style="height: 40%;"></div>
+                                <div class="bar" style="height: 60%;"></div>
+                                <div class="bar" style="height: 35%;"></div>
+                                <div class="bar" style="height: 80%;"></div>
+                                <div class="bar" style="height: 50%;"></div>
+                                <div class="bar" style="height: 90%; background-color: var(--green-core, #22C55E);">
+                                </div>
+                                <div class="bar" style="height: 70%;"></div>
+                            </div>
+                            <p class="chart-note"><span class="material-icons">insert_chart</span> Ready for Angular
+                                Chart.js Integration</p>
+                        </div>
+                    </div>
+
+                    <div class="widget-card products-widget">
+                        <div class="widget-header">
+                            <h3>Top Products</h3>
+                        </div>
+
+                        <div class="product-list">
+                            <div class="product-item">
+                                <div class="product-icon"><span class="material-icons">watch</span></div>
+                                <div class="product-info">
+                                    <h4>Minimalist Watch</h4>
+                                    <p>124 Sales</p>
+                                </div>
+                                <div class="product-revenue">$14,200</div>
+                            </div>
+
+                            <div class="product-item">
+                                <div class="product-icon"><span class="material-icons">headphones</span></div>
+                                <div class="product-info">
+                                    <h4>Noise-Cancelling Pods</h4>
+                                    <p>98 Sales</p>
+                                </div>
+                                <div class="product-revenue">$8,500</div>
+                            </div>
+
+                            <div class="product-item">
+                                <div class="product-icon"><span class="material-icons">backpack</span></div>
+                                <div class="product-info">
+                                    <h4>Urban Backpack</h4>
+                                    <p>75 Sales</p>
+                                </div>
+                                <div class="product-revenue">$6,100</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="widget-card timeline-widget">
+                        <div class="widget-header">
+                            <h3>System Activity</h3>
+                            <a href="404page.html" class="btn-secondary">Refresh</a>
+                        </div>
+
+                        <div class="timeline-container">
+                            <div class="timeline-item">
+                                <div class="timeline-dot success"></div>
+                                <div class="timeline-content">
+                                    <p><strong>Database Backup</strong> completed successfully.</p>
+                                    <span class="timeline-time">Today, 04:00 AM</span>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-dot warning"></div>
+                                <div class="timeline-content">
+                                    <p><strong>High Traffic Alert:</strong> 200+ active users detected.</p>
+                                    <span class="timeline-time">Yesterday, 08:30 PM</span>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-dot info"></div>
+                                <div class="timeline-content">
+                                    <p><strong>New Admin Account</strong> created by Marcus Vance.</p>
+                                    <span class="timeline-time">Yesterday, 02:15 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="data-table-container">
+                    <div class="table-header">
+                        <h3>Recent Transactions</h3>
+                        <a href="404page.html" class="btn-secondary">View All</a>
+                    </div>
+
+                    <table class="dashboard-table">
+                        <thead>
+                            <tr>
+                                <th>Order ID</th>
+                                <th>Customer</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                                <th>Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#ORD-8801</td>
+                                <td>Sarah Jenkins</td>
+                                <td>Today, 10:42 AM</td>
+                                <td><span class="status-badge success">Completed</span></td>
+                                <td>$124.00</td>
+                            </tr>
+                            <tr>
+                                <td>#ORD-8802</td>
+                                <td>Michael Chen</td>
+                                <td>Today, 09:15 AM</td>
+                                <td><span class="status-badge pending">Processing</span></td>
+                                <td>$89.50</td>
+                            </tr>
+                            <tr>
+                                <td>#ORD-8803</td>
+                                <td>Emma Watson</td>
+                                <td>Yesterday</td>
+                                <td><span class="status-badge success">Completed</span></td>
+                                <td>$210.25</td>
+                            </tr>
+                            <tr>
+                                <td>#ORD-8804</td>
+                                <td>James Rodriguez</td>
+                                <td>Yesterday</td>
+                                <td><span class="status-badge failed">Failed</span></td>
+                                <td>$45.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </main>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const sidebar = document.querySelector('.sidebar');
+            const sidebarOverlay = document.getElementById('sidebarOverlay');
+
+            if (mobileMenuBtn && sidebar && sidebarOverlay) {
+
+                mobileMenuBtn.addEventListener('click', () => {
+                    sidebar.classList.add('active');
+                    sidebarOverlay.classList.add('active');
+                });
+
+                sidebarOverlay.addEventListener('click', () => {
+                    sidebar.classList.remove('active');
+                    sidebarOverlay.classList.remove('active');
+                });
+
+                const navLinks = document.querySelectorAll('.nav-link');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        if (window.innerWidth <= 768) {
+                            sidebar.classList.remove('active');
+                            sidebarOverlay.classList.remove('active');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

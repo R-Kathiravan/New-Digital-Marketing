@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Digital Marketing </title>
+    <title>About - Digital Marketing </title>
     <link rel="stylesheet" href="shared.css">
     <link rel="stylesheet" href="about.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -33,17 +33,18 @@
                     <a href="index.html">Home</a>
                     <a href="service.html" class="active">About</a>
                     <a href="service.html">Service</a>
-                    <a href="404page.html">Blog</a>
-                    <a href="404page.html">Contact</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="dashboard.html">Dashboard</a>
                     <div class="close-btn material-icons" id="closeMenu">close</div>
                     <div class="head-btn mob-view">
-                        <a href="404page.html" class="btn-primary">Let's Talk</a>
+                        <a href="contact.html" class="btn-primary">Let's Talk</a>
                         <a href="login.html" class="btn-secondary">Login</a>
                     </div>
                 </div>
 
                 <div class="head-btn">
-                    <a href="404page.html" class="btn-primary">Let's Talk</a>
+                    <a href="contact.html" class="btn-primary">Let's Talk</a>
                     <a href="login.html" class="btn-secondary">Login</a>
                 </div>
 
@@ -85,7 +86,7 @@
                 <p>We believe great design starts with great ideas. That's why we work closely with our clients to
                     understand their vision, goals, and audience.</p>
 
-                <a href="404page.html" class="btn-primary">Get in Touch</a>
+                <a href="contact.html" class="btn-primary">Get in Touch</a>
             </div>
             <div class="about-side-b floater">
                 <div class="about-card">
@@ -330,7 +331,7 @@
                 <div class="head-desc">Success is a team effort <span class="italic">let's Connect</span></div>
             </div>
             <div class="sec-head-btn">
-                <a href="404page.html" class="sec-head-right">
+                <a href="tel: +91 9876543210" class="sec-head-right">
                     <span class="material-icons">call</span>
                     +919342575899
                 </a>
@@ -395,7 +396,7 @@
                 We're ready to help.</h2>
             <p>We're eager to hear about your upcoming marketing project. Let's connect and explore how our team can
                 support your goals effectively.</p>
-            <a href="404page.html" class="btn-secondary">Contact Us</a>
+            <a href="contact.html" class="btn-secondary">Contact Us</a>
         </div>
     </section>
     <footer>
@@ -425,8 +426,8 @@
                     <a href="index.html">Home</a>
                     <a href="about.html">About</a>
                     <a href="service.html">Service</a>
-                    <a href="404page.html">Blog</a>
-                    <a href="404page.html">Contact</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contact.html">Contact</a>
                 </div>
                 <div class="footer-content">
                     <h3>Services</h3>
@@ -456,7 +457,7 @@
     <script src="./script.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
-             const reviews = [
+            const reviews = [
                 {
                     text: "Stackly completely transformed our digital presence. Our conversion rates doubled in just two months, and the dashboard makes tracking ROI effortless.",
                     name: "Sarah Jenkins",
@@ -489,7 +490,7 @@
                 }
             ];
 
-             const avatars = document.querySelectorAll('.avatar-thumb');
+            const avatars = document.querySelectorAll('.avatar-thumb');
             const reviewCard = document.getElementById('reviewCard');
             const reviewText = document.getElementById('reviewText');
             const reviewerName = document.getElementById('reviewerName');
@@ -497,7 +498,7 @@
             const reviewerImg = document.getElementById('reviewerImg');
 
             let currentIndex = 0;
-            const intervalTime = 4000;  
+            const intervalTime = 4000;
             let interval;
 
             function updateTestimonial(index) {

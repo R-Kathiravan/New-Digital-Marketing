@@ -31,20 +31,29 @@
                 </a>
 
                 <div class="menu-items" id="navMenu">
-                    <a href="index.html" class="active">Home</a>
+                    <div class="home-nav">
+                        <a href="index.html" class="home-btn nav-link active">Home</a>
+                        <span class="material-icons dropdown-icon" id="homeDropdownBtn">
+                            expand_more
+                        </span>
+                        <div class="home-select" id="homeDropdown">
+                            <a href="./homepage2/index.html" class="nav-link">Home Page 2</a>
+                        </div>
+                    </div>
                     <a href="about.html">About</a>
                     <a href="service.html">Service</a>
-                    <a href="404page.html">Blog</a>
-                    <a href="404page.html">Contact</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="dashboard.html">Dashboard</a>
                     <div class="close-btn material-icons" id="closeMenu">close</div>
                     <div class="head-btn mob-view">
-                        <a href="404page.html" class="btn-primary">Let's Talk</a>
+                        <a href="contact.html" class="btn-primary">Let's Talk</a>
                         <a href="login.html" class="btn-secondary">Login</a>
                     </div>
                 </div>
 
                 <div class="head-btn">
-                    <a href="404page.html" class="btn-primary">Let's Talk</a>
+                    <a href="contact.html" class="btn-primary">Let's Talk</a>
                     <a href="login.html" class="btn-secondary">Login</a>
                 </div>
 
@@ -72,7 +81,7 @@
                 <div class="hero-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi nostrum
                     perferendis quos odio cumque temporibus. Eius, tenetur. Veritatis, recusandae. Sequi.</div>
                 <div class="hero-btn floater">
-                    <a href="404page.html" class="btn-primary">Contact Us</a>
+                    <a href="contact.html" class="btn-primary">Contact Us</a>
                     <a href="404page.html" class="play-btn">
                         <span class="material-icons">play_arrow</span>
                     </a>
@@ -664,9 +673,9 @@
                 <div class="head-desc">Success is a team effort <span class="italic">let's Connect</span></div>
             </div>
             <div class="sec-head-btn">
-                <a href="404page.html" class="sec-head-right">
+                <a href="tel:+91 9876543210" class="sec-head-right">
                     <span class="material-icons">call</span>
-                    +919342575899
+                    +919876543210
                 </a>
             </div>
         </div>
@@ -729,7 +738,7 @@
                 We're ready to help.</h2>
             <p>We're eager to hear about your upcoming marketing project. Let's connect and explore how our team can
                 support your goals effectively.</p>
-            <a href="404page.html" class="btn-secondary">Contact Us</a>
+            <a href="contact.html" class="btn-secondary">Contact Us</a>
         </div>
     </section>
     <footer>
@@ -759,8 +768,8 @@
                     <a href="index.html">Home</a>
                     <a href="about.html">About</a>
                     <a href="service.html">Service</a>
-                    <a href="404page.html">Blog</a>
-                    <a href="404page.html">Contact</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contact.html">Contact</a>
                 </div>
                 <div class="footer-content">
                     <h3>Services</h3>
@@ -799,7 +808,7 @@
             });
         });
         document.addEventListener("DOMContentLoaded", () => {
-             const reviews = [
+            const reviews = [
                 {
                     text: "Stackly completely transformed our digital presence. Our conversion rates doubled in just two months, and the dashboard makes tracking ROI effortless.",
                     name: "Sarah Jenkins",
@@ -832,7 +841,7 @@
                 }
             ];
 
-             const avatars = document.querySelectorAll('.avatar-thumb');
+            const avatars = document.querySelectorAll('.avatar-thumb');
             const reviewCard = document.getElementById('reviewCard');
             const reviewText = document.getElementById('reviewText');
             const reviewerName = document.getElementById('reviewerName');
@@ -840,7 +849,7 @@
             const reviewerImg = document.getElementById('reviewerImg');
 
             let currentIndex = 0;
-            const intervalTime = 4000; 
+            const intervalTime = 4000;
             let interval;
 
             function updateTestimonial(index) {
@@ -893,7 +902,20 @@
                 });
             });
         });
+        const homeDropdownBtn = document.getElementById("homeDropdownBtn");
+        const homeDropdown = document.getElementById("homeDropdown");
+        const icon = document.querySelector(".dropdown-icon");
 
+        homeDropdownBtn.addEventListener("click", () => {
+            homeDropdown.classList.toggle("show");
+            icon.classList.toggle("rotate");
+        });
+        document.addEventListener("click", (e) => {
+            if (!homeDropdown.contains(e.target) && !homeDropdownBtn.contains(e.target)) {
+                homeDropdown.classList.remove("show");
+                icon.classList.remove("rotate");
+            }
+        });
     </script>
 </body>
 

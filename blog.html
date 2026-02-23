@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Digital Marketing </title>
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="blog.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Space+Grotesk:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+    <div id="header-wrapper">
+        <header id="header">
+            <div class="head-cls">
+                <a href="index.html" class="head-logo">
+                    <img src="./assets/Stackly-logo-green.webp" alt="Stackly Logo" class="logo">
+                    <div class="hero-overlay"></div>
+                </a>
+
+                <div class="menu-items" id="navMenu">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="service.html">Service</a>
+                    <a href="blog.html" class="active">Blog</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="dashboard.html">Dashboard</a>
+                    <div class="close-btn material-icons" id="closeMenu">close</div>
+                    <div class="head-btn mob-view">
+                        <a href="contact.html" class="btn-primary">Let's Talk</a>
+                        <a href="login.html" class="btn-secondary">Login</a>
+                    </div>
+                </div>
+
+                <div class="head-btn">
+                    <a href="contact.html" class="btn-primary">Let's Talk</a>
+                    <a href="login.html" class="btn-secondary">Login</a>
+                </div>
+
+                <div class="head-scroll-btn">
+                    <a href="tel:0987654321" class="head-call">
+                        <span class="material-icons">call</span>
+                        <div>Call Anytime
+                            <span>0987654321</span>
+                        </div>
+                    </a>
+                    <a href="login.html" class="btn-secondary">Login</a>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span class="material-icons">menu</span>
+                </div>
+            </div>
+        </header>
+    </div>
+    <section class="hero-sec">
+        <div class="sec-hero-container">
+            <h1>Blog</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="material-icons">double_arrow</span>
+                <a href="about.html" class="active">Blog</a>
+            </div>
+        </div>
+    </section>
+    <section class="blog-section">
+        <div class="blog-container">
+
+            <div class="section-header-centered" style="margin-bottom: 40px;">
+                <div class="chips">Insights & Strategies</div>
+                <h1 class="head-desc">The Stackly <span class="text-gradient">Journal</span></h1>
+            </div>
+
+            <div class="featured-post">
+                <div class="featured-image-wrapper">
+                    <img src="./assets/blog.webp" alt="Featured Post" class="featured-img">
+                </div>
+
+                <div class="featured-content">
+                    <div class="post-meta">
+                        <span class="category-chip">Case Study</span>
+                        <span class="post-date">Feb 18, 2026</span>
+                    </div>
+
+                    <h2 class="featured-title">How We Scaled a FinTech Startup to $10M ARR in 14 Months</h2>
+                    <p class="featured-excerpt">
+                        Discover the exact SEO architecture and paid acquisition loop we deployed to drastically lower
+                        customer acquisition cost and dominate organic search.
+                    </p>
+
+                    <div class="featured-footer">
+                        <div class="author-info">
+                            <img src="./assets/team3.webp" alt="Marcus Vance" class="author-avatar">
+                            <span class="author-name">Marcus Vance</span>
+                        </div>
+                        <a href="404page.html" class="btn-primary read-btn">
+                            Read Article <span class="material-icons">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="article-grid">
+
+                <div class="article-card">
+                    <div class="card-image-wrapper">
+                        <img src="./assets/blog1.webp" alt="Blog Post" class="card-img">
+                        <div class="card-category">SEO</div>
+                    </div>
+                    <div class="card-content">
+                        <span class="post-date">Feb 12, 2026</span>
+                        <h3 class="card-title">The Future of Search: Navigating AI Overviews</h3>
+                        <p class="card-excerpt">Learn how to optimize your content architecture to rank alongside
+                            AI-generated search results...</p>
+
+                        <div class="card-footer">
+                            <div class="author-info">
+                                <img src="./assets/team2.webp" alt="Sophia Chen" class="author-avatar">
+                                <span class="author-name">Sophia Chen</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-card">
+                    <div class="card-image-wrapper">
+                        <img src="./assets/blog2.webp" alt="Blog Post" class="card-img">
+                        <div class="card-category">Paid Ads</div>
+                    </div>
+                    <div class="card-content">
+                        <span class="post-date">Feb 05, 2026</span>
+                        <h3 class="card-title">Stop Wasting Budget: Advanced Meta Ads Retargeting</h3>
+                        <p class="card-excerpt">A step-by-step guide to building high-converting retargeting funnels
+                            that actually drive ROAS...</p>
+
+                        <div class="card-footer">
+                            <div class="author-info">
+                                <img src="./assets/team1.webp" alt="Julian Hayes" class="author-avatar">
+                                <span class="author-name">Julian Hayes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-card">
+                    <div class="card-image-wrapper">
+                        <img src="./assets/blog3.webp" alt="Blog Post" class="card-img">
+                        <div class="card-category">Growth</div>
+                    </div>
+                    <div class="card-content">
+                        <span class="post-date">Jan 28, 2026</span>
+                        <h3 class="card-title">Why Your Website Isn't Converting (And How to Fix It)</h3>
+                        <p class="card-excerpt">Traffic is useless if it doesn't convert. We break down the top 5 UX
+                            mistakes killing your sales...</p>
+
+                        <div class="card-footer">
+                            <div class="author-info">
+                                <img src="./assets/team4.webp" alt="Marcus Vance" class="author-avatar">
+                                <span class="author-name">Marcus Vance</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> 
+
+        </div>
+    </section>
+    <section class="newsletter-section">
+        <div class="newsletter-container">
+
+            <div class="newsletter-content">
+                <h2 class="head-desc">Get <span class="italic">Growth Strategies</span> in Your Inbox</h2>
+                <p>Join 10,000+ founders and marketers receiving our weekly playbook on SEO, paid ads, and
+                    conversion optimization.</p>
+            </div>
+
+            <div class="newsletter-form-wrapper">
+                <form id="newsletter-form" class="newsletter-form">
+                    <div class="input-group">
+                        <span class="material-icons mail-icon">mail</span>
+                        <input type="email" id="newsletter_email" placeholder="Enter your email address" required>
+                        <button type="submit" class="btn-primary subscribe-btn">Subscribe</button>
+                    </div>
+                    <p class="spam-disclaimer"><span class="material-icons">lock</span> We respect your privacy.
+                        No spam, ever.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div id="toast-container"></div>
+    <section class="cta">
+        <div class="cta-img floater">
+            <img src="./assets/cta-bg1.webp" alt="CTA IMG" loading="lazy">
+        </div>
+        <div class="cta-container container">
+            <h2 class="head-desc">Have a project?
+                We're ready to help.</h2>
+            <p>We're eager to hear about your upcoming marketing project. Let's connect and explore how our team can
+                support your goals effectively.</p>
+            <a href="404page.html" class="btn-secondary">Contact Us</a>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content-container container">
+            <div class="footer-container">
+                <div class="footer-top">
+                    <div class="footer-logo">
+                        <img src="./assets/Stackly-logo-green.webp" alt="Stackly Logo" class="logo" loading="lazy">
+                        <p class="footer-tagline">Engineering your digital growth.</p>
+                        <div class="footer-social-icon">
+                            <a href="404page.html">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                            <a href="404page.html">
+
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="404page.html">
+
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-content">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="service.html">Service</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-content">
+                    <h3>Services</h3>
+                    <a href="404page.html">Email Marketing</a>
+                    <a href="404page.html">Content Marketing</a>
+                    <a href="404page.html">Analytics & Strategy</a>
+                    <a href="404page.html">Creative Design</a>
+                    <a href="404page.html">Online Branding</a>
+                </div>
+                <div class="footer-content">
+                    <h3>Legal Links</h3>
+                    <a href="404page.html">Privacy Policy</a>
+                    <a href="404page.html">Terms & Condition</a>
+                    <a href="404page.html">A Page for Disclaimers</a>
+                    <a href="404page.html">Notice for Copyright</a>
+                </div>
+            </div>
+            <div class="footer-copy">
+                <div class="fo"><span class="material-icons">copyright</span>2026 All Rights Reserved</div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const newsletterForm = document.getElementById('newsletter-form');
+
+             const toastContainer = document.getElementById('toast-container');
+
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+
+                    const emailInput = document.getElementById('newsletter_email');
+                    const email = emailInput.value.trim();
+
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+                    if (!email) {
+                        showToast('Please enter an email address.', 'error', 'warning_amber');
+                        return;
+                    }
+
+                    if (!emailRegex.test(email)) {
+                        showToast('Hmm, that email doesn\'t look quite right.', 'error', 'alternate_email');
+                        return;
+                    }
+
+                    window.location.href = '404page.html'
+                    newsletterForm.reset();
+
+                });
+            }
+
+            function showToast(message, type, iconName) {
+                if (!toastContainer) return;
+
+                const toast = document.createElement('div');
+                toast.classList.add('toast', type);
+
+                toast.innerHTML = `
+            <span class="material-icons">${iconName}</span>
+            <span>${message}</span>
+        `;
+
+                toastContainer.appendChild(toast);
+
+                setTimeout(() => {
+                    toast.classList.add('fade-out');
+                    toast.addEventListener('animationend', () => {
+                        toast.remove();
+                    });
+                }, 3500);
+            }
+        });
+    </script>
+</body>
+
+</html>
