@@ -19,49 +19,83 @@
 </head>
 
 <body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
     <div id="header-wrap">
         <header class="header" id="header">
             <div class="head-cls">
                 <a href="index.html">
-                    <img src="./assets/Stackly-logo-Blue.webp" alt="Stackly LOGO" class="logo">
+                    <img src="./assets/Stackly-logo.webp" alt="Stackly LOGO" class="logo">
                 </a>
-                <div class="menu-items">
-                    <a href="index.html" class="active">Home</a>
-                    <a href="404page.html">About</a>
-                    <a href="404page.html">Service</a>
-                    <a href="404page.html">Pricing</a>
-                    <a href="404page.html">Contact</a>
+                <div class="menu-items" id="navMenu">
+                    <div class="home-nav">
+                        <a href="index.html" class="home-btn nav-link active">Home</a>
+                        <span class="material-icons dropdown-icon" id="homeDropdownBtn">
+                            expand_more
+                        </span>
+                        <div class="home-select" id="homeDropdown">
+                            <a href="../index.html" class="nav-link">Home Page 1</a>
+                        </div>
+                    </div> <a href="about.html">Company</a>
+                    <a href="service.html">Case Studies</a>
+                    <a href="pricing.html">Pricing</a>
+                    <a href="contact.html">Contact</a>
+                    <div class="close-btn material-icons" id="closeMenu">close</div>
                 </div>
                 <div class="head-btn">
-                    <a href="404page.html" class="btn-primary">Get a quote <span
+                    <a href="contact.html" class="btn-primary">Get a quote <span
                             class="material-icons">arrow_outward</span>
                     </a>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span class="material-icons">menu</span>
                 </div>
             </div>
         </header>
     </div>
-    <section class="hero">
-        <div class="hero-container">
-            <div class="hero-content-container">
-                <h1>Discreet teams
-                    <span class="italic">driving strategic</span>
-                    growth
+    <section class="premium-hero">
+        <div class="premium-hero-container">
+
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="pulse-dot-gold"></span>
+                    <span class="badge-text">Award-Winning Digital Agency</span>
+                </div>
+
+                <h1 class="hero-title">
+                    <div class="title-line"><span class="line-inner">Discreet teams</span></div>
+                    <div class="title-line"><span class="line-inner italic-gold">driving strategic</span></div>
+                    <div class="title-line"><span class="line-inner">growth & scale.</span></div>
                 </h1>
-                <p>Stackly adopts a client-centric approach, focusing on creative business's unique goals and challenges
+
+                <p class="hero-desc">
+                    We combine data-driven insights with world-class design to build digital experiences that dominate
+                    the market and elevate your brand.
                 </p>
-                <a href="404page.html" class="btn-primary">Discover More <span
-                        class="material-icons">arrow_outward</span></a>
+
+                <div class="hero-actions">
+                    <a href="contact.html" class="btn-solid-gold">Start Your Project <i
+                            class="fas fa-arrow-right"></i></a>
+                    <a href="404page.html" class="btn-outline-gold"><i class="fas fa-play-circle"></i> View Showreel</a>
+                </div>
             </div>
-            <div class="hero-img-container">
-                <img src="./assets/home-hero.webp" alt="Hero Img" loading="lazy">
-                <div class="hero-overlay">
-                    <p>Paid Camplaigns</p>
-                    <div>
-                        <span class="material-icons">radio</span>
-                        Socail Media Marketing
+
+            <div class="hero-visual">
+                <div class="visual-glow-bg"></div>
+
+                <div class="main-image-wrapper">
+                    <img src="./assets/home-hero.webp" alt="Strategic Growth" class="hero-img">
+                </div>
+
+                <div class="floating-glass-card">
+                    <div class="card-icon"><i class="fas fa-chart-pie"></i></div>
+                    <div class="card-info">
+                        <h4>Performance</h4>
+                        <p>+250% Avg. ROI</p>
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
     <section class="brand-section">
@@ -206,97 +240,583 @@
                             <p class="service-number">03</p>
                         </div>
                         <div class="services-head">UI/UX & Web<br>Experience</div>
-                        <img src="./assets/service-img3.webp" alt="UI UX Design" loading="lazy">
+                        <img src="./assets/uiux.webp" alt="UI UX Design" loading="lazy">
                     </div>
                 </div>
 
             </div>
         </div>
     </section>
-    <section class="brand-section1">
-        <div class="brand-container">
+    <section class="choose">
+        <div class="choose-us container">
+            <div class="choose-us-container">
+                <div class="section-header">
+                    <div>
+                        <h3 class="subtitle"><i class="fa-solid fa-asterisk"></i> Why Choose Us</h3>
+                        <h2 class="main-heading">
+                            Solutions Designed
+                            For Your Success</h2>
+                    </div>
+                </div>
+                <div class="choose-us-card-container">
+                    <div class="choose-us-left">
+                        <div class="choose-us-card">
+                            <span class="material-icons">person</span>
+                            <div class="choose-us-head">Experienced Team</div>
+                            <div class="choose-desc">Stackly adopt client-centric approach, focusing business's unique
+                                goals
+                            </div>
+                        </div>
+                        <div class="choose-us-card">
+                            <span class="material-icons">person</span>
+                            <div class="choose-us-head">Experienced Team</div>
+                            <div class="choose-desc">Stackly adopt client-centric approach, focusing business's unique
+                                goals
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choose-us-img">
+                        <img src="./assets/choose-img.webp" alt="About Image" loading="lazy">
+                    </div>
+                    <div class="choose-us-left">
+                        <div class="choose-us-card card-hov">
+                            <span class="material-icons">person</span>
+                            <div class="choose-us-head">Experienced Team</div>
+                            <div class="choose-desc">Stackly adopt client-centric approach, focusing business's unique
+                                goals
+                            </div>
+                        </div>
+                        <div class="choose-us-card">
+                            <span class="material-icons">person</span>
+                            <div class="choose-us-head">Experienced Team</div>
+                            <div class="choose-desc">Stackly adopt client-centric approach, focusing business's unique
+                                goals
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="latest-work">
+        <div class="latest-work-con container">
+            <div class="section-header">
+                <div>
+                    <h3 class="subtitle"><i class="fa-solid fa-asterisk"></i> Latest Work</h3>
+                    <h2 class="main-heading">
+                        Browse Our Latest Finished
+                        Creative projects</h2>
+                </div>
+            </div>
+            <section class="latest-work-section">
+                <div class="latest-work-wrapper">
+                    <div class="latest-work-container">
 
-            <!-- <p class="brand-title">Trusted by 10,000+ innovative teams worldwide</p> -->
+                        <div class="latest-work-card">
+                            <div class="latest-work-card-inner">
+                                <div class="latest-img"><img src="./assets/services4.webp" alt="Project 1"
+                                        loading="lazy">
+                                </div>
+                                <h4 class="latest-head">FinTech App Redesign</h4>
+                                <div class="latest-chips">UI/UX Design</div>
+                            </div>
+                        </div>
 
-            <div class="marquee-wrapper">
-                <div class="marquee-track">
+                        <div class="latest-work-card">
+                            <div class="latest-work-card-inner">
+                                <div class="latest-img"><img src="./assets/services1.webp" alt="Project 2"
+                                        loading="lazy">
+                                </div>
+                                <h4 class="latest-head">E-Commerce Scaling</h4>
+                                <div class="latest-chips">SEO Optimization</div>
+                            </div>
+                        </div>
 
-                    <div class="brand-item" title="Google"><i class="fa-brands fa-google"></i><span
-                            class="brand-name">Google</span></div>
-                    <div class="brand-item" title="Meta"><i class="fa-brands fa-meta"></i><span
-                            class="brand-name">Meta</span></div>
-                    <div class="brand-item" title="Slack"><i class="fa-brands fa-slack"></i><span
-                            class="brand-name">Slack</span></div>
-                    <div class="brand-item" title="Stripe"><i class="fa-brands fa-stripe"></i><span
-                            class="brand-name">Stripe</span></div>
-                    <div class="brand-item" title="Shopify"><i class="fa-brands fa-shopify"></i><span
-                            class="brand-name">Shopify</span></div>
-                    <div class="brand-item" title="HubSpot"><i class="fa-brands fa-hubspot"></i><span
-                            class="brand-name">HubSpot</span></div>
+                        <div class="latest-work-card">
+                            <div class="latest-work-card-inner">
+                                <div class="latest-img"><img src="./assets/services3.webp" alt="Project 3"
+                                        loading="lazy">
+                                </div>
+                                <h4 class="latest-head">SaaS Dashboard UI</h4>
+                                <div class="latest-chips">Web Development</div>
+                            </div>
+                        </div>
 
-                    <div class="brand-item" title="Google"><i class="fa-brands fa-google"></i><span
-                            class="brand-name">Google</span></div>
-                    <div class="brand-item" title="Meta"><i class="fa-brands fa-meta"></i><span
-                            class="brand-name">Meta</span></div>
-                    <div class="brand-item" title="Slack"><i class="fa-brands fa-slack"></i><span
-                            class="brand-name">Slack</span></div>
-                    <div class="brand-item" title="Stripe"><i class="fa-brands fa-stripe"></i><span
-                            class="brand-name">Stripe</span></div>
-                    <div class="brand-item" title="Shopify"><i class="fa-brands fa-shopify"></i><span
-                            class="brand-name">Shopify</span></div>
-                    <div class="brand-item" title="HubSpot"><i class="fa-brands fa-hubspot"></i><span
-                            class="brand-name">HubSpot</span></div>
+                        <div class="latest-work-card">
+                            <div class="latest-work-card-inner">
+                                <div class="latest-img"><img src="./assets/services5.webp" alt="Project 4"
+                                        loading="lazy">
+                                </div>
+                                <h4 class="latest-head">Global Brand Strategy</h4>
+                                <div class="latest-chips">Digital Marketing</div>
+                            </div>
+                        </div>
 
+                        <div class="latest-work-card">
+                            <div class="latest-work-card-inner">
+                                <div class="latest-img"><img src="./assets/services2.webp" alt="Project 5"
+                                        loading="lazy">
+                                </div>
+                                <h4 class="latest-head">Healthcare Lead Gen</h4>
+                                <div class="latest-chips">Paid Campaigns</div>
+                            </div>
+                        </div>
+                        <div class="latest-work-card">
+                            <div class="latest-work-card-inner">
+                                <div class="latest-img"><img src="./assets/services1.webp" alt="Project 2"
+                                        loading="lazy">
+                                </div>
+                                <h4 class="latest-head">E-Commerce Scaling</h4>
+                                <div class="latest-chips">SEO Optimization</div>
+                            </div>
+                        </div>
+
+                        <div class="latest-work-card">
+                            <div class="latest-work-card-inner">
+                                <div class="latest-img"><img src="./assets/services3.webp" alt="Project 3"
+                                        loading="lazy">
+                                </div>
+                                <h4 class="latest-head">SaaS Dashboard UI</h4>
+                                <div class="latest-chips">Web Development</div>
+                            </div>
+                        </div>
+
+                        <div class="latest-work-card">
+                            <div class="latest-work-card-inner">
+                                <div class="latest-img"><img src="./assets/services5.webp" alt="Project 4"
+                                        loading="lazy">
+                                </div>
+                                <h4 class="latest-head">Global Brand Strategy</h4>
+                                <div class="latest-chips">Digital Marketing</div>
+                            </div>
+                        </div>
+
+                        <div class="latest-work-card">
+                            <div class="latest-work-card-inner">
+                                <div class="latest-img"><img src="./assets/services2.webp" alt="Project 5"
+                                        loading="lazy">
+                                </div>
+                                <h4 class="latest-head">Healthcare Lead Gen</h4>
+                                <div class="latest-chips">Paid Campaigns</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    <section class="process">
+        <div class="process-container container">
+            <div class="process-content-con">
+                <div class="section-header">
+                    <div>
+                        <h3 class="subtitle"><i class="fa-solid fa-asterisk"></i> Working Process</h3>
+                        <h2 class="main-heading">
+                            Proven Marketing Process
+                            for Results</h2>
+                    </div>
+                </div>
+                <div class="process-card-container">
+                    <div class="process-card">
+                        <div class="process-num">01</div>
+                        <div class="process-text">Understand Client Needs</div>
+                    </div>
+                    <div class="process-card">
+                        <div class="process-num">02</div>
+                        <div class="process-text">Strategy and Planning</div>
+                    </div>
+                    <div class="process-card">
+                        <div class="process-num">03</div>
+                        <div class="process-text">Execution & Optimizations</div>
+                    </div>
+                    <div class="process-card">
+                        <div class="process-num">04</div>
+                        <div class="process-text">Finished & Reporting</div>
+                    </div>
+                </div>
+            </div>
+            <div class="process-img">
+                <img src="./assets/process-img.webp" alt="Process Man" loading="lazy">
+                <div class="process-overlay">
+                    <span>18+</span>
+                    YEARS OF EXPERIENCE
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="team-section">
+        <div class="team-container">
+
+            <div class="section-header">
+                <h3 class="subtitle"><i class="fa-solid fa-asterisk"></i> Our Experts</h3>
+                <h2 class="main-heading">Meet the Minds Behind the Growth</h2>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-img-wrapper">
+                        <img src="./assets/team4.webp" alt="Eleanor Richards" loading="lazy">
+                        <div class="team-social-overlay">
+                            <a href="404page.html"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="404page.html"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h4 class="team-name">Eleanor Richards</h4>
+                        <p class="team-role">Head of Strategy</p>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-img-wrapper">
+                        <img src="./assets/team5.webp" alt="Marcus Thorne" loading="lazy">
+                        <div class="team-social-overlay">
+                            <a href="404page.html"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="404page.html"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h4 class="team-name">Marcus Thorne</h4>
+                        <p class="team-role">Lead UI/UX Designer</p>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-img-wrapper">
+                        <img src="./assets/team1.webp" alt="Sarah Jenkins" loading="lazy">
+                        <div class="team-social-overlay">
+                            <a href="404page.html"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="404page.html"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h4 class="team-name">Sarah Jenkins</h4>
+                        <p class="team-role">Performance Marketing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="testimonial-section">
+        <div class="testimonial-container">
+
+            <div class="section-header">
+                <h3 class="subtitle"><i class="fa-solid fa-asterisk"></i> Client Stories</h3>
+                <h2 class="main-heading">What Our Partners Say</h2>
+            </div>
+
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <i class="fa-solid fa-quote-right quote-bg-icon"></i>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testi-text">"Stackly completely transformed our digital presence. Their data-driven
+                        approach led to a 300% increase in our inbound leads within just six months."</p>
+                    <div class="testi-author">
+                        <img src="./assets/review3.webp" alt="Client Avatar" loading="lazy">
+                        <div class="author-details">
+                            <h5 class="author-name">David Chen</h5>
+                            <span class="author-company">CEO, TechFlow SaaS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <i class="fa-solid fa-quote-right quote-bg-icon"></i>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testi-text">"The absolute best agency we have ever worked with. The UI/UX overhaul they
+                        did on our platform directly resulted in a massive drop in customer churn."</p>
+                    <div class="testi-author">
+                        <img src="./assets/review1.webp" alt="Client Avatar" loading="lazy">
+                        <div class="author-details">
+                            <h5 class="author-name">Amanda Vance</h5>
+                            <span class="author-company">CMO, Lumina Health</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="blog">
+        <div class="blog-con container">
+            <div class="section-header">
+                <h3 class="subtitle"><i class="fa-solid fa-asterisk"></i> Latest Stories</h3>
+                <h2 class="main-heading">Read Our Recent Blog Post
+                    Form Update news</h2>
+            </div>
+            <div class="blog-card-container">
+                <div class="blog-card">
+                    <img src="./assets/blog1.webp" alt="Blog Img" loading="lazy">
+                    <div class="blog-chips">24 Jan 2026</div>
+                    <div class="blog-desc">Top 10 new marketing tools for business - 2025</div>
+                </div>
+                <div class="blog-card">
+                    <img src="./assets/blog2.webp" alt="Blog Img" loading="lazy">
+                    <div class="blog-chips">24 Jan 2026</div>
+                    <div class="blog-desc">Top 10 new marketing tools for business - 2025</div>
+                </div>
+                <div class="blog-card">
+                    <img src="./assets/blog3.webp" alt="Blog Img" loading="lazy">
+                    <div class="blog-chips">24 Jan 2026</div>
+                    <div class="blog-desc">Top 10 new marketing tools for business - 2025</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-section">
+        <div class="contact-container">
+
+            <div class="contact-info">
+                <h3 class="subtitle"><i class="fa-solid fa-asterisk"></i> Get In Touch</h3>
+                <h2 class="main-heading">Let's Build Something Extraordinary.</h2>
+                <p class="contact-desc">Whether you have a project in mind or just want to chat about your digital
+                    strategy, our team is ready to help you scale.</p>
+
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="item-text">
+                            <h5>Email Us</h5>
+                            <p>info@thestackly.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="icon-box"><i class="fa-solid fa-phone"></i></div>
+                        <div class="item-text">
+                            <h5>Call Us</h5>
+                            <p>+91 9876543210</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="icon-box"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="item-text">
+                            <h5>Visit Us</h5>
+                            <p>Stackly Phase1<br>Salem, Tamil Nadu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <form id="premium-contact-form" class="contact-form" action="404page.html" method="POST">
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" placeholder="John Doe">
+                            <span class="error-message">Please enter your name</span>
+                        </div>
+                        <div class="input-group">
+                            <label for="email">Email Address</label>
+                            <input type="text" id="email" placeholder="john@company.com">
+                            <span class="error-message">Please enter a valid email</span>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" placeholder="How can we help you?">
+                        <span class="error-message">Please enter a subject</span>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="message">Project Details</label>
+                        <textarea id="message" rows="5" placeholder="Tell us about your goals..."></textarea>
+                        <span class="error-message">Please provide project details</span>
+                    </div>
+
+                    <button type="submit" id="submit-btn" class="btn-solid-gold w-100">
+                        <span class="btn-text">Send Message</span> <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+
+                    <div id="form-success" class="form-success-msg">
+                        <i class="fa-solid fa-circle-check"></i> Message sent successfully! We will be in touch.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="cta-section">
+        <div class="cta-container">
+            <div class="cta-card">
+                <div class="cta-glow"></div>
+
+                <div class="cta-content">
+                    <h2 class="cta-heading">Ready to dominate your market?</h2>
+                    <p class="cta-desc">Join the industry leaders who are scaling their revenue with our award-winning
+                        digital strategies.</p>
+
+                    <div class="cta-actions">
+                        <a href="contact.html" class="btn-solid-gold">Start Your Project <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                        <a href="pricing.html" class="btn-outline-gold">View Pricing</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <div class="footer-top">
+
+                <div class="footer-brand-col">
+                    <img src="./assets/stackly-logo.webp" alt="Stackly-logo" class="logo">
+                    <p class="footer-bio">Award-winning digital agency driving strategic growth for forward-thinking
+                        enterprise brands.</p>
+
+                </div>
+
+                <div class="footer-links-wrapper">
+                    <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">Company</a></li>
+                            <li><a href="service.html">Case Studies</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="404page.html">UI/UX Design</a></li>
+                            <li><a href="404page.html">Web Development</a></li>
+                            <li><a href="404page.html">SEO Optimization</a></li>
+                            <li><a href="404page.html">Digital Marketing</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="404page.html">LinkedIn</a></li>
+                            <li><a href="404page.html">Twitter</a></li>
+                            <li><a href="404page.html">Instagram</a></li>
+                            <li><a href="404page.html">Behance</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 Stackly. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="404page.html">Privacy Policy</a>
+                    <a href="404page.html">Terms of Service</a>
                 </div>
             </div>
 
         </div>
-    </section>
-    <section class="brand-section2 container">
-        <div class="brand-container2">
-
-            <!-- <p class="brand-title">Trusted by 10,000+ innovative teams worldwide</p> -->
-
-            <div class="marquee-wrapper">
-                <div class="marquee-track">
-
-                    <div class="brand-item" title="Google"><i class="fa-brands fa-google"></i><span
-                            class="brand-name">Google</span></div>
-                    <div class="brand-item" title="Meta"><i class="fa-brands fa-meta"></i><span
-                            class="brand-name">Meta</span></div>
-                    <div class="brand-item" title="Slack"><i class="fa-brands fa-slack"></i><span
-                            class="brand-name">Slack</span></div>
-                    <div class="brand-item" title="Stripe"><i class="fa-brands fa-stripe"></i><span
-                            class="brand-name">Stripe</span></div>
-                    <div class="brand-item" title="Shopify"><i class="fa-brands fa-shopify"></i><span
-                            class="brand-name">Shopify</span></div>
-                    <div class="brand-item" title="HubSpot"><i class="fa-brands fa-hubspot"></i><span
-                            class="brand-name">HubSpot</span></div>
-
-                    <div class="brand-item" title="Google"><i class="fa-brands fa-google"></i><span
-                            class="brand-name">Google</span></div>
-                    <div class="brand-item" title="Meta"><i class="fa-brands fa-meta"></i><span
-                            class="brand-name">Meta</span></div>
-                    <div class="brand-item" title="Slack"><i class="fa-brands fa-slack"></i><span
-                            class="brand-name">Slack</span></div>
-                    <div class="brand-item" title="Stripe"><i class="fa-brands fa-stripe"></i><span
-                            class="brand-name">Stripe</span></div>
-                    <div class="brand-item" title="Shopify"><i class="fa-brands fa-shopify"></i><span
-                            class="brand-name">Shopify</span></div>
-                    <div class="brand-item" title="HubSpot"><i class="fa-brands fa-hubspot"></i><span
-                            class="brand-name">HubSpot</span></div>
-
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-
+    </footer>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="./js/main.js"></script>
     <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const form = document.getElementById("premium-contact-form");
+            const successMsg = document.getElementById("form-success");
+            const submitBtn = document.getElementById("submit-btn");
+
+            if (form) {
+                form.addEventListener("submit", (e) => {
+                    e.preventDefault();
+
+                    let isValid = true;
+
+                    const name = document.getElementById("name");
+                    const email = document.getElementById("email");
+                    const subject = document.getElementById("subject");
+                    const message = document.getElementById("message");
+
+                    document.querySelectorAll(".input-group").forEach(group => {
+                        group.classList.remove("error");
+                    });
+
+                    if (name.value.trim() === "") {
+                        setError(name);
+                        isValid = false;
+                    }
+                    const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+                    if (email.value.trim() === "" || !email.value.match(emailPattern)) {
+                        setError(email);
+                        isValid = false;
+                    }
+
+                    if (subject.value.trim() === "") {
+                        setError(subject);
+                        isValid = false;
+                    }
+
+                    if (message.value.trim() === "") {
+                        setError(message);
+                        isValid = false;
+                    }
+
+                    if (isValid) {
+                        const originalBtnText = submitBtn.innerHTML;
+                        submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
+                        submitBtn.style.pointerEvents = "none";
+
+                        setTimeout(() => {
+                            form.reset();
+                            submitBtn.innerHTML = originalBtnText;
+                            submitBtn.style.pointerEvents = "auto";
+
+                            successMsg.style.display = "block";
+
+                            setTimeout(() => {
+                                successMsg.style.display = "none";
+                                window.location.href = '404page.html';
+                            }, 2000);
+
+                        }, 2000);
+                    }
+                });
+            }
+
+            function setError(inputElement) {
+                inputElement.parentElement.classList.add("error");
+            }
+
+            const inputs = document.querySelectorAll(".input-group input, .input-group textarea");
+            inputs.forEach(input => {
+                input.addEventListener("input", () => {
+                    if (input.parentElement.classList.contains("error")) {
+                        input.parentElement.classList.remove("error");
+                    }
+                });
+            });
+        });
+
+        const homeDropdownBtn = document.getElementById("homeDropdownBtn");
+        const homeDropdown = document.getElementById("homeDropdown");
+        const icon = document.querySelector(".dropdown-icon");
+
+        homeDropdownBtn.addEventListener("click", () => {
+            homeDropdown.classList.toggle("show");
+            icon.classList.toggle("rotate");
+        });
+        document.addEventListener("click", (e) => {
+            if (!homeDropdown.contains(e.target) && !homeDropdownBtn.contains(e.target)) {
+                homeDropdown.classList.remove("show");
+                icon.classList.remove("rotate");
+            }
+        });
+    </script>
 </body>
 
 </html>

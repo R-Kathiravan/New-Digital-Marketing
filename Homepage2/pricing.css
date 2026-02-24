@@ -1,0 +1,401 @@
+ .pricing-section {
+     padding: 100px 20px 140px;
+     background-color: var(--bg-main);
+ }
+
+ .pricing-grid {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 30px;
+     align-items: center;
+     max-width: 1200px;
+     margin: 0 auto;
+ }
+
+ .billing-toggle-wrapper {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 20px;
+     margin-bottom: 80px;
+ }
+
+ .toggle-label {
+     font-size: 1.1rem;
+     font-weight: 600;
+     color: var(--text-secondary);
+     transition: color 0.3s ease;
+ }
+
+ .toggle-label.active {
+     color: var(--text-primary);
+ }
+
+ .save-badge {
+     background-color: rgba(250, 204, 21, 0.15);
+     color: var(--accent-gold);
+     padding: 4px 10px;
+     border-radius: 20px;
+     font-size: 0.8rem;
+     margin-left: 10px;
+     vertical-align: middle;
+ }
+
+ .switch {
+     position: relative;
+     display: inline-block;
+     width: 70px;
+     height: 38px;
+ }
+
+ .switch input {
+     opacity: 0;
+     width: 0;
+     height: 0;
+ }
+
+ .slider {
+     position: absolute;
+     cursor: pointer;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-color: var(--border-default);
+     transition: .4s;
+     border-radius: 40px;
+     border: 2px solid var(--border-subtle);
+ }
+
+ .slider:before {
+     position: absolute;
+     content: "";
+     height: 26px;
+     width: 26px;
+     left: 4px;
+     bottom: 4px;
+     background-color: var(--text-primary);
+     transition: .4s;
+     border-radius: 50%;
+ }
+
+ input:checked+.slider {
+     background-color: var(--accent-gold);
+     border-color: var(--accent-gold);
+ }
+
+ input:checked+.slider:before {
+     transform: translateX(32px);
+     background-color: #000;
+ }
+
+ .pricing-card {
+     background-color: var(--bg-surface);
+     border: 1px solid var(--border-default);
+     border-radius: 24px;
+     padding: 50px 40px;
+     transition: all 0.4s ease;
+     position: relative;
+     z-index: 1;
+ }
+
+ .pricing-card:hover {
+     transform: translateY(-10px);
+     border-color: var(--border-active);
+ }
+
+ .tier-header {
+     margin-bottom: 30px;
+     padding-bottom: 30px;
+     border-bottom: 1px solid var(--border-light);
+ }
+
+ .tier-name {
+     font-size: 1.8rem;
+     font-family: var(--font-heading);
+     color: var(--text-primary);
+     margin: 0 0 10px 0;
+ }
+
+ .tier-desc {
+     color: var(--text-secondary);
+     font-size: 1rem;
+     margin: 0;
+     min-height: 48px;
+ }
+
+ .tier-price {
+     margin-bottom: 40px;
+     display: flex;
+     align-items: baseline;
+ }
+
+ .currency {
+     font-size: 1.5rem;
+     color: var(--text-primary);
+     font-weight: 700;
+     margin-right: 5px;
+ }
+
+ .amount {
+     font-size: 4rem;
+     font-family: var(--font-heading);
+     color: var(--text-primary);
+     font-weight: 800;
+     line-height: 1;
+ }
+
+ .custom-price {
+     font-size: 2.8rem;
+ }
+
+ .period {
+     color: var(--text-secondary);
+     font-size: 1rem;
+     margin-left: 5px;
+ }
+
+ .tier-features {
+     list-style: none;
+     padding: 0;
+     margin: 0 0 40px 0;
+ }
+
+ .tier-features li {
+     color: var(--text-primary);
+     margin-bottom: 20px;
+     font-size: 1.05rem;
+     display: flex;
+     align-items: center;
+     gap: 15px;
+ }
+
+ .tier-features li i {
+     color: var(--accent-gold);
+     font-size: 1.2rem;
+ }
+
+ .tier-features li.disabled {
+     color: var(--text-secondary);
+     opacity: 0.5;
+ }
+
+ .tier-features li.disabled i {
+     color: var(--text-secondary);
+ }
+
+ .featured-tier {
+     border-color: var(--accent-gold);
+     padding: 70px 40px;
+     background-color: #0a0a0a;
+     box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.8);
+     overflow: hidden;
+ }
+
+ .popular-tag {
+     position: absolute;
+     top: 0;
+     left: 50%;
+     transform: translateX(-50%);
+     background-color: var(--accent-gold);
+     color: #000;
+     padding: 8px 24px;
+     font-size: 0.9rem;
+     font-weight: 700;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+     border-radius: 0 0 16px 16px;
+ }
+
+ .featured-glow {
+     position: absolute;
+     top: 30%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: 150%;
+     height: 150%;
+     background: radial-gradient(circle, rgba(250, 204, 21, 0.08) 0%, transparent 60%);
+     z-index: -1;
+     pointer-events: none;
+ }
+
+ @media (max-width: 1024px) {
+     .pricing-grid {
+         grid-template-columns: 1fr;
+         gap: 50px;
+         max-width: 500px;
+     }
+
+     .featured-tier {
+         padding: 60px 40px;
+     }
+
+     .billing-toggle-wrapper {
+         flex-direction: column;
+         gap: 15px;
+     }
+
+     .pricing-card {
+         padding: 20px 10px;
+     }
+ }
+
+ .faq-section {
+     padding: 100px 20px 80px;
+     background-color: var(--bg-main);
+ }
+
+ .text-center {
+     text-align: center;
+     margin-bottom: 60px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .faq-accordion {
+     max-width: 800px;
+     margin: 0 auto;
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+ }
+
+ .faq-item {
+     background-color: var(--bg-surface);
+     border: 1px solid var(--border-default);
+     border-radius: 16px;
+     overflow: hidden;
+     transition: border-color 0.3s ease, box-shadow 0.3s ease;
+ }
+
+ .faq-item:hover {
+     border-color: rgba(250, 204, 21, 0.4);
+ }
+
+ .faq-question {
+     width: 100%;
+     text-align: left;
+     background: none;
+     border: none;
+     padding: 25px 30px;
+     font-size: 1.2rem;
+     font-family: var(--font-heading);
+     color: var(--text-primary);
+     font-weight: 600;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     cursor: pointer;
+     transition: color 0.3s ease;
+ }
+
+ .faq-icon {
+     color: var(--accent-gold);
+     transition: transform 0.4s ease;
+ }
+
+ .faq-answer-wrapper {
+     display: grid;
+     grid-template-rows: 0fr;
+     transition: grid-template-rows 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+ }
+
+ .faq-answer {
+     overflow: hidden;
+ }
+
+ .faq-answer p {
+     color: var(--text-secondary);
+     padding: 0 30px 25px;
+     margin: 0;
+     line-height: 1.7;
+     font-size: 1.05rem;
+ }
+
+ .faq-item.active {
+     border-color: var(--accent-gold);
+     box-shadow: var(--glow-shadow);
+ }
+
+ .faq-item.active .faq-question {
+     color: var(--accent-gold);
+ }
+
+ .faq-item.active .faq-icon {
+     transform: rotate(45deg);
+ }
+
+ .faq-item.active .faq-answer-wrapper {
+     grid-template-rows: 1fr;
+ }
+
+ .enterprise-banner-section {
+     padding: 40px 20px 120px;
+     background-color: var(--bg-main);
+ }
+
+ .enterprise-card {
+     background: linear-gradient(135deg, #111111 0%, #0a0a0a 100%);
+     border: 1px solid var(--border-subtle);
+     border-radius: 24px;
+     padding: 60px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     max-width: 1000px;
+     margin: 0 auto;
+     position: relative;
+     overflow: hidden;
+     box-shadow: var(--shadow-lg);
+ }
+
+ .enterprise-card::before {
+     content: '';
+     position: absolute;
+     top: -50%;
+     left: -50%;
+     width: 200%;
+     height: 200%;
+     background: linear-gradient(to right, transparent, rgba(250, 204, 21, 0.05), transparent);
+     transform: rotate(45deg);
+     pointer-events: none;
+ }
+
+ .ec-content {
+     max-width: 600px;
+ }
+
+ .ec-title {
+     font-size: 2.5rem;
+     font-family: var(--font-heading);
+     color: var(--text-primary);
+     margin-bottom: 15px;
+ }
+
+ .ec-desc {
+     color: var(--text-secondary);
+     font-size: 1.1rem;
+     line-height: 1.6;
+     margin: 0;
+ }
+
+ @media (max-width: 992px) {
+     .enterprise-card {
+         flex-direction: column;
+         text-align: center;
+         gap: 40px;
+         padding: 50px 30px;
+     }
+ }
+
+ @media (max-width: 600px) {
+     .faq-question {
+         padding: 20px;
+         font-size: 1.1rem;
+     }
+
+     .faq-answer p {
+         padding: 0 20px 20px;
+     }
+ }
