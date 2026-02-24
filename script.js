@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }
     if (!hamburger) return;
-    if(!closeMenu) return;
+    if (!closeMenu) return;
     hamburger.addEventListener("click", openMenu);
     closeMenu.addEventListener("click", closeNav);
 

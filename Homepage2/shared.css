@@ -349,6 +349,10 @@ img {
         display: none;
     }
 
+    #header.fixed {
+        padding: 35px;
+    }
+
     .home-select .nav-link {
         background-color: var(--bg-surface-hover);
     }
@@ -445,11 +449,11 @@ header,
     }
 
     .menu-items .active {
-        color: white;
+        color: var(--accent-gold);
     }
 
     .menu-items a:hover {
-        color: var(--green-highlight);
+        color: var(--accent-gold);
     }
 
     .hamburger {
@@ -581,8 +585,21 @@ header,
     color: var(--text-primary);
 }
 
-.section-header i {
-    color: var(--gold-core);
+@keyframes spinInfinite {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.subtitle i {
+    color: var(--gold-core) !important;
+    animation: spinInfinite 4s linear infinite;
+    display: inline-block;
+    margin-right: 5px;
 }
 
 .section-header h3 {

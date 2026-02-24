@@ -147,11 +147,13 @@
 
     color: var(--text-primary) !important;
 }
+
 @media (max-width:768px) {
-    .about-container{
+    .about-container {
         flex-direction: column;
     }
-    .about-side-b{
+
+    .about-side-b {
         gap: 10px;
     }
 }
@@ -228,7 +230,7 @@
     }
 }
 
- .team-section {
+.team-section {
     padding: 100px 20px;
     background-color: var(--bg-main, #060907);
 }
@@ -238,7 +240,7 @@
     margin: 0 auto;
 }
 
- .section-header-centered {
+.section-header-centered {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -252,42 +254,42 @@
     margin-top: 15px;
 }
 
- .team-grid {
+.team-grid {
     display: grid;
-     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
 }
 
- .team-card {
+.team-card {
     display: flex;
     flex-direction: column;
     gap: 20px;
     cursor: pointer;
- }
+}
 
- .team-image-wrapper {
+.team-image-wrapper {
     position: relative;
     border-radius: 16px;
     overflow: hidden;
-     aspect-ratio: 4/5;
- }
+    aspect-ratio: 4/5;
+}
 
- .team-img {
+.team-img {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
     filter: grayscale(100%) contrast(1.1) brightness(0.8);
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
- 
+
 .team-card:hover .team-img {
     filter: grayscale(0%) contrast(1) brightness(1);
     transform: scale(1.05);
 }
- 
+
 .team-socials {
     position: absolute;
-    bottom: -60px; 
+    bottom: -60px;
     left: 0;
     width: 100%;
     padding: 20px;
@@ -297,7 +299,7 @@
     gap: 15px;
     transition: bottom 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
- 
+
 .team-card:hover .team-socials {
     bottom: 0;
 }
@@ -315,14 +317,14 @@
     transition: all 0.3s ease;
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
- 
+
 .team-socials a:hover {
     background-color: var(--green-core, #22C55E);
     border-color: var(--green-core, #22C55E);
     color: #000000;
     transform: translateY(-3px);
 }
- 
+
 .team-info h3 {
     color: #ffffff;
     font-size: 1.4rem;
@@ -331,7 +333,7 @@
 }
 
 .team-info p {
-    color: var(--green-core, #22C55E); 
+    color: var(--green-core, #22C55E);
     font-size: 0.95rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -567,7 +569,7 @@
 
     }
 }
- 
+
 
 .contact .sec-head-right {
     display: flex;

@@ -174,9 +174,9 @@
  }
 
  @media (max-width:478px) {
-    .article-grid{
-        grid-template-columns: repeat(auto-fit,minmax(100%,1fr));
-    }
+     .article-grid {
+         grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+     }
  }
 
  .article-card {

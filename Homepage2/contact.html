@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Digital Marketing </title>
     <link rel="stylesheet" href="shared.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
@@ -28,18 +28,11 @@
                     <img src="./assets/stackly-logo.webp" alt="Stackly LOGO" class="logo">
                 </a>
                 <div class="menu-items" id="navMenu">
-                    <div class="home-nav">
-                        <a href="index.html" class="home-btn nav-link active">Home</a>
-                        <span class="material-icons dropdown-icon" id="homeDropdownBtn">
-                            expand_more
-                        </span>
-                        <div class="home-select" id="homeDropdown">
-                            <a href="../index.html" class="nav-link">Home Page 1</a>
-                        </div>
-                    </div> <a href="about.html">Company</a>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">Company</a>
                     <a href="service.html">Case Studies</a>
                     <a href="pricing.html">Pricing</a>
-                    <a href="contact.html">Contact</a>
+                    <a href="contact.html" class="active">Contact</a>
                     <div class="close-btn material-icons" id="closeMenu">close</div>
                 </div>
                 <div class="head-btn">
@@ -53,7 +46,353 @@
             </div>
         </header>
     </div>
-    <h1>Working on it</h1>
+    <section class="hero-head">
+        <div class="hero-container">
+            <h1>Get in Touch.</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <div class="material-icons">double_arrow</div>
+                <span>Contact</span>
+            </div>
+        </div>
+    </section>
+    <section class="routing-section">
+        <div class="container">
+            <div class="routing-grid">
+
+                <div class="routing-card">
+                    <div class="routing-icon"><i class="fa-solid fa-handshake"></i></div>
+                    <h3 class="routing-title">Talk to Sales</h3>
+                    <p class="routing-desc">Discuss your project scope, budget, and timeline with our strategy
+                        directors.</p>
+                    <a href="mailto:sales@stackly.com" class="routing-link">sales@stackly.com <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="routing-card">
+                    <div class="routing-icon"><i class="fa-solid fa-headset"></i></div>
+                    <h3 class="routing-title">Technical Support</h3>
+                    <p class="routing-desc">For existing enterprise clients requiring immediate engineering assistance.
+                    </p>
+                    <a href="mailto:support@stackly.com" class="routing-link">support@stackly.com <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="routing-card">
+                    <div class="routing-icon"><i class="fa-solid fa-bullhorn"></i></div>
+                    <h3 class="routing-title">Press & Media</h3>
+                    <p class="routing-desc">For media inquiries, interviews, or global agency partnership opportunities.
+                    </p>
+                    <a href="mailto:media@stackly.com" class="routing-link">media@stackly.com <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="advanced-contact-section">
+        <div class="container">
+            <div class="advanced-contact-wrapper">
+
+                <div class="contact-context">
+                    <h3 class="subtitle"><i class="fa-solid fa-asterisk"></i> Project Inquiry</h3>
+                    <h2 class="main-heading">Let's architect your next big move.</h2>
+                    <p class="context-desc">Fill out the form with your project details. This helps us route your
+                        inquiry to the correct technical director.</p>
+
+                    <div class="process-timeline">
+                        <div class="process-step">
+                            <div class="step-dot"></div>
+                            <h4>1. Review</h4>
+                            <p>We review your technical requirements within 24 hours.</p>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-dot"></div>
+                            <h4>2. Discovery</h4>
+                            <p>We schedule a 30-minute consultation call.</p>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-dot"></div>
+                            <h4>3. Proposal</h4>
+                            <p>We deliver a custom architecture roadmap and quote.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-container-dark">
+                    <form id="enterprise-form" class="enterprise-form" action="#" method="POST">
+
+                        <div class="form-row">
+                            <div class="input-group">
+                                <label for="fullName">Full Name *</label>
+                                <input type="text" id="fullName" placeholder="John Doe">
+                                <span class="error-message">Please enter your full name</span>
+                            </div>
+                            <div class="input-group">
+                                <label for="workEmail">Work Email *</label>
+                                <input type="text" id="workEmail" placeholder="john@company.com">
+                                <span class="error-message">Please enter a valid work email</span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="input-group">
+                                <label for="companyName">Company Name</label>
+                                <input type="text" id="companyName" placeholder="Acme Corp">
+                            </div>
+                            <div class="input-group">
+                                <label for="budget">Estimated Budget *</label>
+                                <div class="custom-select-wrapper">
+                                    <select id="budget">
+                                        <option value="" disabled selected>Select a range...</option>
+                                        <option value="10k-25k">$10k - $25k</option>
+                                        <option value="25k-50k">$25k - $50k</option>
+                                        <option value="50k-100k">$50k - $100k</option>
+                                        <option value="100k+">$100k+</option>
+                                    </select>
+                                    <i class="fa-solid fa-chevron-down select-icon"></i>
+                                </div>
+                                <span class="error-message">Please select a budget range</span>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="serviceType">Primary Service Needed *</label>
+                            <div class="custom-select-wrapper">
+                                <select id="serviceType">
+                                    <option value="" disabled selected>What are we building?</option>
+                                    <option value="webapp">Full-Stack Web Application (.NET/Angular)</option>
+                                    <option value="uiux">Enterprise UI/UX Redesign</option>
+                                    <option value="migration">Legacy Database Migration (MSSQL)</option>
+                                    <option value="marketing">Digital Growth Strategy</option>
+                                </select>
+                                <i class="fa-solid fa-chevron-down select-icon"></i>
+                            </div>
+                            <span class="error-message">Please select a service type</span>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="projectDetails">Project Details *</label>
+                            <textarea id="projectDetails" rows="4"
+                                placeholder="Tell us about your technical challenges and goals..."></textarea>
+                            <span class="error-message">Please provide some project details</span>
+                        </div>
+
+                        <button type="submit" id="enterprise-submit-btn" class="btn-solid-gold w-100">
+                            <span class="btn-text">Submit Request</span> <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="global-offices-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h3 class="subtitle"><i class="fa-solid fa-asterisk"></i> Global Footprint</h3>
+                <h2 class="main-heading">Visit Our Offices</h2>
+                <p class="section-desc">We operate across multiple time zones to provide seamless, round-the-clock
+                    engineering and support to our enterprise partners.</p>
+            </div>
+
+            <div class="offices-grid">
+
+                <div class="office-card">
+                    <div class="office-map-bg"><i class="fa-solid fa-map-location-dot"></i></div>
+
+                    <h3 class="office-city">Stackly Phase1 <span class="hq-badge">HQ</span></h3>
+                    <p class="office-address"> MMR Complex, Chinna Thirupathi,<br> near Chinna Muniyappan Kovil<br>Tamil
+                        Nadu</p>
+
+                    <div class="office-contact-info">
+                        <p><i class="fa-solid fa-phone"></i> +91 9876543210</p>
+                        <p><i class="fa-solid fa-envelope"></i> info@thestackly.com</p>
+                    </div>
+
+                    <a href="404page.html" class="btn-outline-gold w-100">Get Directions</a>
+                </div>
+
+                <div class="office-card">
+                    <div class="office-map-bg"><i class="fa-solid fa-map-location-dot"></i></div>
+
+                    <h3 class="office-city">Salem Phase II </h3>
+                    <p class="office-address">Kallikadu Angappa Nagar<br>Omalur, Salem,<br>Tamil Nadu,</p>
+
+                    <div class="office-contact-info">
+                        <p><i class="fa-solid fa-phone"></i> +91 9786863432</p>
+                        <p><i class="fa-solid fa-envelope"></i> info@stackly.in</p>
+                    </div>
+
+                    <a href="404page.html" class="btn-outline-gold w-100">Get Directions</a>
+                </div>
+
+                <div class="office-card">
+                    <div class="office-map-bg"><i class="fa-solid fa-map-location-dot"></i></div>
+
+                    <h3 class="office-city">Bengaluru</h3>
+                    <p class="office-address">Suraksha Nagar, Yelenahalli,<br>Begur,<br>Bengaluru, Karnataka </p>
+
+                    <div class="office-contact-info">
+                        <p><i class="fa-solid fa-phone"></i> +91 654321789</p>
+                        <p><i class="fa-solid fa-envelope"></i> thestackly@gmail.com</p>
+                    </div>
+
+                    <a href="404page.html" class="btn-outline-gold w-100">Get Directions</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <div class="footer-top">
+
+                <div class="footer-brand-col">
+                    <img src="./assets/stackly-logo.webp" alt="Stackly-logo" class="logo">
+                    <p class="footer-bio">Award-winning digital agency driving strategic growth for forward-thinking
+                        enterprise brands.</p>
+
+                </div>
+
+                <div class="footer-links-wrapper">
+                    <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">Company</a></li>
+                            <li><a href="service.html">Case Studies</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="404page.html">UI/UX Design</a></li>
+                            <li><a href="404page.html">Web Development</a></li>
+                            <li><a href="404page.html">SEO Optimization</a></li>
+                            <li><a href="404page.html">Digital Marketing</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="404page.html">LinkedIn</a></li>
+                            <li><a href="404page.html">Twitter</a></li>
+                            <li><a href="404page.html">Instagram</a></li>
+                            <li><a href="404page.html">Behance</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 Stackly. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="404page.html">Privacy Policy</a>
+                    <a href="404page.html">Terms of Service</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const enterpriseForm = document.getElementById("enterprise-form");
+            const submitBtn = document.getElementById("enterprise-submit-btn");
+
+            if (enterpriseForm) {
+                enterpriseForm.addEventListener("submit", (e) => {
+                    e.preventDefault();
+
+                    let isValid = true;
+
+                    const fullName = document.getElementById("fullName");
+                    const workEmail = document.getElementById("workEmail");
+                    const budget = document.getElementById("budget");
+                    const serviceType = document.getElementById("serviceType");
+                    const projectDetails = document.getElementById("projectDetails");
+
+                    document.querySelectorAll(".input-group").forEach(group => {
+                        group.classList.remove("error");
+                    });
+
+                    if (fullName.value.trim() === "") {
+                        setError(fullName);
+                        isValid = false;
+                    }
+
+                    const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+                    if (workEmail.value.trim() === "" || !workEmail.value.match(emailPattern)) {
+                        setError(workEmail);
+                        isValid = false;
+                    }
+
+                    if (budget.value === "") {
+                        setError(budget);
+                        isValid = false;
+                    }
+
+                    if (serviceType.value === "") {
+                        setError(serviceType);
+                        isValid = false;
+                    }
+
+                    if (projectDetails.value.trim() === "") {
+                        setError(projectDetails);
+                        isValid = false;
+                    }
+
+                    if (isValid) {
+                        const originalBtnText = submitBtn.innerHTML;
+                        submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Processing...';
+                        submitBtn.style.pointerEvents = "none";
+
+                        setTimeout(() => {
+                            enterpriseForm.reset();
+                            submitBtn.innerHTML = originalBtnText;
+                            submitBtn.style.pointerEvents = "auto";
+                            window.location.href = '404page.html';
+                        }, 2000);
+                    }
+                });
+            }
+
+            function setError(element) {
+                element.parentElement.classList.add("error");
+                if (element.parentElement.classList.contains("custom-select-wrapper")) {
+                    element.parentElement.parentElement.classList.add("error");
+                }
+            }
+
+            const inputs = document.querySelectorAll("#enterprise-form input, #enterprise-form textarea, #enterprise-form select");
+
+            inputs.forEach(input => {
+                const eventType = input.tagName === "SELECT" ? "change" : "input";
+
+                input.addEventListener(eventType, () => {
+                    let parentGroup = input.parentElement;
+
+                    if (parentGroup.classList.contains("custom-select-wrapper")) {
+                        parentGroup = parentGroup.parentElement;
+                    }
+
+                    if (parentGroup.classList.contains("error")) {
+                        parentGroup.classList.remove("error");
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
