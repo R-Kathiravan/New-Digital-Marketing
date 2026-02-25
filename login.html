@@ -87,12 +87,35 @@
                                 <label class="input-label" for="password_input">Type your password</label>
                             </div>
 
-                            <!-- <a href="404page.html" class="forget">Forget password?</a> -->
+                            <a href="#" id="forgot-link" class="forget">Forget password?</a>
                         </div>
 
                         <button type="submit" class="btn-primary" style="width: 100%; margin-top: 24px;">Login</button>
                     </form>
+                    <form id="forgot-form" style="display: none;">
+                        <div class="input-content-container">
 
+                            <h2 style="color: var(--text-primary); margin-bottom: 8px;">Reset Password</h2>
+                            <p style="color: var(--text-secondary); margin-bottom: 24px; font-size: 0.95rem;">
+                                Enter your email to receive a secure recovery link.
+                            </p>
+
+                            <div class="input-container">
+                                <span class="material-icons icon-left">email</span>
+                                <input type="text" id="forgot_email_input" class="input-style" placeholder=" " />
+                                <label class="input-label" for="forgot_email_input">Type your email</label>
+                            </div>
+
+                            <a href="#" id="back-to-login-link" class="forget"
+                                style="display: flex; align-items: center; gap: 6px;">
+                                <span class="material-icons" style="font-size: 1.1rem;">arrow_back</span> Back to Login
+                            </a>
+                        </div>
+
+                        <button type="submit" class="btn-primary" style="width: 100%; margin-top: 24px;">
+                            Send Link
+                        </button>
+                    </form>
                     <div id="toast-container"></div>
                     <div class="login-btn">
                         <a href="404page.html" class="btn-secondary"> <i class="fa-brands fa-google"></i> Login with
@@ -174,6 +197,132 @@
             });
 
             function showToast(message, type, iconName) {
+                const toast = document.createElement('div');
+                toast.classList.add('toast', type);
+                toast.innerHTML = `
+            <span class="material-icons">${iconName}</span>
+            <span>${message}</span>
+        `;
+
+                toastContainer.appendChild(toast);
+
+                setTimeout(() => {
+                    toast.classList.add('fade-out');
+                    toast.addEventListener('animationend', () => {
+                        toast.remove();
+                    });
+                }, 3500);
+            }
+        });
+        document.addEventListener('DOMContentLoaded', () => {
+
+             const loginForm = document.getElementById('login-form');
+            const forgotForm = document.getElementById('forgot-form');
+
+            const emailInput = document.getElementById('email_input');
+            const passwordInput = document.getElementById('password_input');
+            const forgotEmailInput = document.getElementById('forgot_email_input');
+
+            const forgotLink = document.getElementById('forgot-link');
+            const backToLoginLink = document.getElementById('back-to-login-link');
+
+            const toastContainer = document.getElementById('toast-container');
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+ 
+            if (forgotLink && backToLoginLink && loginForm && forgotForm) {
+
+                 loginForm.style.transition = "opacity 0.3s ease";
+                forgotForm.style.transition = "opacity 0.3s ease";
+
+                forgotLink.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    loginForm.style.opacity = "0";
+                    setTimeout(() => {
+                        loginForm.style.display = "none";
+                        forgotForm.style.display = "block";
+                        setTimeout(() => { forgotForm.style.opacity = "1"; }, 50);
+                    }, 300);
+                });
+
+                backToLoginLink.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    forgotForm.style.opacity = "0";
+                    setTimeout(() => {
+                        forgotForm.style.display = "none";
+                        loginForm.style.display = "block";
+                        setTimeout(() => { loginForm.style.opacity = "1"; }, 50);
+                    }, 300);
+                });
+            }
+
+            if (loginForm) {
+                loginForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+
+                    const email = emailInput.value.trim();
+                    const password = passwordInput.value.trim();
+
+                    if (!email) {
+                        showToast('Please enter your email address.', 'error', 'error_outline');
+                        return;
+                    }
+
+                    if (!emailRegex.test(email)) {
+                        showToast('Please enter a valid email format.', 'error', 'error_outline');
+                        return;
+                    }
+
+                    if (!password) {
+                        showToast('Please enter your password.', 'error', 'error_outline');
+                        return;
+                    }
+                    if (password.length < 6) {
+                        showToast('Password must be at least 6 characters.', 'error', 'warning_amber');
+                        return;
+                    }
+
+                    showToast('Login successful! Redirecting...', 'success', 'check_circle');
+
+                    const btn = loginForm.querySelector('button[type="submit"]');
+                    if (btn) btn.innerHTML = '<span class="material-icons" style="animation: spinInfinite 1s linear infinite;">autorenew</span>';
+
+                    setTimeout(() => { window.location.href = "404page.html"; }, 1000);
+                });
+            }
+
+            if (forgotForm) {
+                forgotForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+
+                    const email = forgotEmailInput.value.trim();
+
+                    if (!email) {
+                        showToast('Please enter your email address.', 'error', 'error_outline');
+                        return;
+                    }
+
+                    if (!emailRegex.test(email)) {
+                        showToast('Please enter a valid email format.', 'error', 'error_outline');
+                        return;
+                    }
+
+                    // showToast('Recovery link sent! Please check your inbox.', 'success', 'check_circle');
+                    const btn = forgotForm.querySelector('button[type="submit"]');
+                    const originalText = btn.innerHTML;
+                    if (btn) btn.innerHTML = '<span class="material-icons" style="animation: spinInfinite 1s linear infinite;">autorenew</span>';
+
+                    setTimeout(() => {
+                        window.location.href = '404page.html'
+                    }, 2500);
+                });
+            }
+
+            function showToast(message, type, iconName) {
+                if (!toastContainer) {
+                    console.error("Toast container not found in HTML!");
+                    return;
+                }
+
                 const toast = document.createElement('div');
                 toast.classList.add('toast', type);
                 toast.innerHTML = `

@@ -44,8 +44,7 @@
                     <div class="close-btn material-icons" id="closeMenu">close</div>
                 </div>
                 <div class="head-btn">
-                    <a href="login.html" class="btn-primary">Login <span
-                            class="material-icons">login</span>
+                    <a href="login.html" class="btn-primary">Login <span class="material-icons">login</span>
                     </a>
                 </div>
                 <div class="hamburger" id="hamburger">
@@ -772,19 +771,12 @@
                         submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
                         submitBtn.style.pointerEvents = "none";
 
+
                         setTimeout(() => {
-                            form.reset();
-                            submitBtn.innerHTML = originalBtnText;
-                            submitBtn.style.pointerEvents = "auto";
-
-                            successMsg.style.display = "block";
-
-                            setTimeout(() => {
-                                successMsg.style.display = "none";
-                                window.location.href = '404page.html';
-                            }, 2000);
-
+                            successMsg.style.display = "none";
+                            window.location.href = '404page.html';
                         }, 2000);
+
                     }
                 });
             }

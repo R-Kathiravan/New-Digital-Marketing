@@ -86,7 +86,7 @@
                         <div class="input-group">
                             <div class="label-row">
                                 <label for="loginPassword">Password</label>
-                                <!-- <a href="#" class="forgot-link">Forgot Password?</a> -->
+                                <a href="#" id="link-forgot" class="forgot-link">Forgot Password?</a>
                             </div>
                             <div class="input-with-icon">
                                 <i class="fa-solid fa-lock"></i>
@@ -143,10 +143,34 @@
                             <span class="btn-text">Create Account</span> <i class="fa-solid fa-user-plus"></i>
                         </button>
                     </form>
+                    <form id="form-forgot" class="auth-form" action="#" method="POST">
+                        <div class="auth-header">
+                            <h3>Reset Password</h3>
+                            <p>Enter your work email and we will send you a secure recovery link.</p>
+                        </div>
 
+                        <div class="input-group">
+                            <label for="forgotEmail">Work Email</label>
+                            <div class="input-with-icon">
+                                <i class="fa-regular fa-envelope"></i>
+                                <input type="text" id="forgotEmail" placeholder="name@company.com">
+                            </div>
+                            <span class="error-message">Please enter a valid work email</span>
+                        </div>
+
+                        <button type="submit" id="btn-submit-forgot" class="btn-solid-gold w-100"
+                            style="margin-bottom: 25px;">
+                            <span class="btn-text">Send Recovery Link</span> <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+
+                        <div style="text-align: center;">
+                            <a href="#" id="link-back-login" class="forgot-link">
+                                <i class="fa-solid fa-arrow-left"></i> Back to Sign In
+                            </a>
+                        </div>
+                    </form>
                 </div>
             </div>
-
         </div>
     </section>
     <footer class="site-footer">
@@ -341,15 +365,10 @@
                         isValid = false;
                     }
 
-                    if (isValid) {
-                        btnSubmitSignup.innerHTML = '<i class="fa-solid fa-check"></i> Account Created!';
-                        btnSubmitSignup.style.backgroundColor = "#22c55e";
-                        btnSubmitSignup.style.borderColor = "#22c55e";
-                        btnSubmitSignup.style.color = "#fff";
+                    if (isValid) { 
 
-                        setTimeout(() => {
-                            formSignup.reset();
-                            setTimeout(() => { document.getElementById('btn-login').click(); }, 1000);
+                        setTimeout(() => { 
+                            window.location.href='404page.html';
                         }, 1000);
                     }
                 });
@@ -368,6 +387,67 @@
                     }
                 });
             });
+            const linkForgot = document.getElementById('link-forgot');
+            const linkBackLogin = document.getElementById('link-back-login');
+            const formForgot = document.getElementById('form-forgot');
+            const authToggle = document.querySelector('.auth-toggle');
+
+            if (linkForgot && formForgot) {
+                linkForgot.addEventListener('click', (e) => {
+                    e.preventDefault();
+
+                    const formLogin = document.getElementById("form-login");
+                    formLogin.classList.remove('active-form');
+                    authToggle.style.display = 'none';
+
+                    setTimeout(() => {
+                        formForgot.classList.add('active-form');
+                    }, 50);
+                });
+            }
+
+            if (linkBackLogin && formForgot) {
+                linkBackLogin.addEventListener('click', (e) => {
+                    e.preventDefault();
+
+                    formForgot.classList.remove('active-form');
+
+                    setTimeout(() => {
+                        authToggle.style.display = 'flex';
+                        const formLogin = document.getElementById("form-login");
+                        formLogin.classList.add('active-form');
+                    }, 50);
+                });
+            }
+
+            if (formForgot) {
+                const btnSubmitForgot = document.getElementById("btn-submit-forgot");
+
+                formForgot.addEventListener("submit", (e) => {
+                    e.preventDefault();
+                    let isValid = true;
+
+                    formForgot.querySelectorAll(".input-group").forEach(group => {
+                        group.classList.remove("error");
+                    });
+
+                    const email = document.getElementById("forgotEmail");
+                    const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+                    if (email.value.trim() === "" || !email.value.match(emailPattern)) {
+                        let parent = email.parentElement;
+                        if (parent.classList.contains("input-with-icon")) {
+                            parent = parent.parentElement;
+                        }
+                        parent.classList.add("error");
+                        isValid = false;
+                    }
+
+                    if (isValid) {
+                        window.location.href = '404page.html'
+                    }
+                });
+            }
 
         });
     </script>
