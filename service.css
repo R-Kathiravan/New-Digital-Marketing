@@ -224,7 +224,6 @@
     }
 }
 
-
 .choose {
     background-color: var(--bg-surface);
 }
@@ -286,17 +285,17 @@
     color: var(--green-deep);
 }
 
-.choose-us-card:hover .choose-icon {
+.choose-us-card:hover .choose-icon span {
     background-color: var(--green-core);
 }
 
-.choose-icon {
+.choose-icon span {
     padding: 16px;
     background-color: var(--bg-surface-hover);
-    border-radius: 20px;
+    border-radius: 50px;
     width: fit-content;
     height: fit-content;
-    font-size: 40px;
+    font-size: 30px;
     transition: all 0.3s ease-in;
 }
 

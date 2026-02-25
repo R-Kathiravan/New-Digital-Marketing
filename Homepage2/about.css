@@ -310,6 +310,7 @@
 .services-container .section-header {
     display: flex;
     align-items: end;
+    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -321,6 +322,7 @@
     max-width: 400px;
     /* margin: auto; */
 }
+
 
 .services-card-container {
     display: grid;

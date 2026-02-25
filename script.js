@@ -215,8 +215,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            showToast('Message sent! We will contact you shortly.', 'success', 'send');
-
+            // showToast('Message sent! We will contact you shortly.', 'success', 'send');
+            window.location.href = '404page.html';
             contactForm.reset();
 
         });

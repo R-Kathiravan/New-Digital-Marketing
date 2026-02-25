@@ -196,7 +196,7 @@ h6,
 }
 
 .btn-primary:hover span {
-    rotate: 45deg;
+    transform: translateX(5px);
 }
 
 .btn-secondary:hover span {
@@ -324,6 +324,9 @@ img {
     display: block;
 }
 
+#header.fixed .head-login {
+    display: none;
+}
 
 .chips {
     padding: 12px 14px;
@@ -351,6 +354,10 @@ img {
 
     #header.fixed {
         padding: 35px;
+    }
+
+    #header.fixed .head-login {
+        display: block;
     }
 
     .home-select .nav-link {
@@ -818,4 +825,10 @@ header,
 
 .hero-container a {
     color: var(--gold-core);
+}
+
+@media (max-width:768px) {
+    .hero-head {
+        background-position: left;
+    }
 }

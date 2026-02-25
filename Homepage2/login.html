@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Digital Marketing </title>
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Space+Grotesk:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+    <div id="header-wrap">
+        <header class="header" id="header">
+            <div class="head-cls">
+                <a href="index.html">
+                    <img src="./assets/stackly-logo.webp" alt="Stackly LOGO" class="logo">
+                </a>
+                <div class="menu-items" id="navMenu">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">Company</a>
+                    <a href="service.html">Case Studies</a>
+                    <a href="pricing.html">Pricing</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="login.html" class="head-login active">Login</a>
+                    <div class="close-btn material-icons" id="closeMenu">close</div>
+                </div>
+                <div class="head-btn">
+                    <a href="login.html" class="btn-primary">Login <span class="material-icons">login</span>
+                    </a>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span class="material-icons">menu</span>
+                </div>
+            </div>
+        </header>
+    </div>
+    <section class="auth-section">
+        <div class="auth-container">
+
+            <div class="auth-visual">
+                <div class="visual-content">
+                    <!-- <a href="index.html" class="auth-logo">Stackly<span class="dot">.</span></a> -->
+                    <h2>Architecting the Future.</h2>
+                    <p>Log in to access your enterprise dashboard, manage your database deployments, and track real-time
+                        analytics.</p>
+                </div>
+                <div class="auth-rings"></div>
+            </div>
+
+            <div class="auth-form-wrapper">
+                <div class="form-box">
+
+                    <div class="auth-toggle">
+                        <button class="toggle-btn active" id="btn-login">Sign In</button>
+                        <button class="toggle-btn" id="btn-signup">Create Account</button>
+                        <div class="toggle-highlighter"></div>
+                    </div>
+
+                    <form id="form-login" class="auth-form active-form" action="#" method="POST">
+                        <div class="auth-header">
+                            <h3>Welcome Back</h3>
+                            <p>Enter your credentials to access your account.</p>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="loginEmail">Work Email</label>
+                            <div class="input-with-icon">
+                                <i class="fa-regular fa-envelope"></i>
+                                <input type="text" id="loginEmail" placeholder="name@company.com">
+                            </div>
+                            <span class="error-message">Please enter a valid work email</span>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="label-row">
+                                <label for="loginPassword">Password</label>
+                                <!-- <a href="#" class="forgot-link">Forgot Password?</a> -->
+                            </div>
+                            <div class="input-with-icon">
+                                <i class="fa-solid fa-lock"></i>
+                                <input type="password" id="loginPassword" placeholder="••••••••">
+                                <i class="fa-regular fa-eye-slash toggle-password"></i>
+                            </div>
+                            <span class="error-message">Password cannot be empty</span>
+                        </div>
+
+                        <button type="submit" id="btn-submit-login" class="btn-solid-gold w-100">
+                            <span class="btn-text">Sign In</span> <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </form>
+
+                    <form id="form-signup" class="auth-form" action="#" method="POST">
+                        <div class="auth-header">
+                            <h3>Create an Account</h3>
+                            <p>Join the platform and scale your operations.</p>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="input-group">
+                                <label for="signupFirstName">First Name</label>
+                                <input type="text" id="signupFirstName" placeholder="John">
+                                <span class="error-message">First name required</span>
+                            </div>
+                            <div class="input-group">
+                                <label for="signupLastName">Last Name</label>
+                                <input type="text" id="signupLastName" placeholder="Doe">
+                                <span class="error-message">Last name required</span>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="signupEmail">Work Email</label>
+                            <div class="input-with-icon">
+                                <i class="fa-regular fa-envelope"></i>
+                                <input type="text" id="signupEmail" placeholder="name@company.com">
+                            </div>
+                            <span class="error-message">Please enter a valid work email</span>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="signupPassword">Password</label>
+                            <div class="input-with-icon">
+                                <i class="fa-solid fa-lock"></i>
+                                <input type="password" id="signupPassword" placeholder="Create a strong password">
+                                <i class="fa-regular fa-eye-slash toggle-password"></i>
+                            </div>
+                            <span class="error-message">Password must be at least 8 characters</span>
+                        </div>
+
+                        <button type="submit" id="btn-submit-signup" class="btn-solid-gold w-100">
+                            <span class="btn-text">Create Account</span> <i class="fa-solid fa-user-plus"></i>
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <div class="footer-top">
+
+                <div class="footer-brand-col">
+                    <img src="./assets/stackly-logo.webp" alt="Stackly-logo" class="logo">
+                    <p class="footer-bio">Award-winning digital agency driving strategic growth for forward-thinking
+                        enterprise brands.</p>
+
+                </div>
+
+                <div class="footer-links-wrapper">
+                    <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">Company</a></li>
+                            <li><a href="service.html">Case Studies</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="404page.html">UI/UX Design</a></li>
+                            <li><a href="404page.html">Web Development</a></li>
+                            <li><a href="404page.html">SEO Optimization</a></li>
+                            <li><a href="404page.html">Digital Marketing</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="404page.html">LinkedIn</a></li>
+                            <li><a href="404page.html">Twitter</a></li>
+                            <li><a href="404page.html">Instagram</a></li>
+                            <li><a href="404page.html">Behance</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 Stackly. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="404page.html">Privacy Policy</a>
+                    <a href="404page.html">Terms of Service</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const btnLogin = document.getElementById('btn-login');
+            const btnSignup = document.getElementById('btn-signup');
+            const formLogin = document.getElementById('form-login');
+            const formSignup = document.getElementById('form-signup');
+            const highlighter = document.querySelector('.toggle-highlighter');
+
+            if (btnLogin && btnSignup) {
+                btnLogin.addEventListener('click', () => {
+                    btnLogin.classList.add('active');
+                    btnSignup.classList.remove('active');
+
+                    highlighter.style.transform = 'translateX(0)';
+
+                    formSignup.classList.remove('active-form');
+                    setTimeout(() => {
+                        formLogin.classList.add('active-form');
+                    }, 50);
+                });
+
+                btnSignup.addEventListener('click', () => {
+                    btnSignup.classList.add('active');
+                    btnLogin.classList.remove('active');
+
+                    highlighter.style.transform = 'translateX(100%)';
+
+                    formLogin.classList.remove('active-form');
+                    setTimeout(() => {
+                        formSignup.classList.add('active-form');
+                    }, 50);
+                });
+            }
+
+            const togglePasswordIcons = document.querySelectorAll('.toggle-password');
+
+            togglePasswordIcons.forEach(icon => {
+                icon.addEventListener('click', function () {
+                    const input = this.previousElementSibling;
+
+                    const type = input.getAttribute('type') === 'password' ? 'text' : 'password';
+                    input.setAttribute('type', type);
+
+                    this.classList.toggle('fa-eye');
+                    this.classList.toggle('fa-eye-slash');
+                });
+            });
+
+        });
+        document.addEventListener("DOMContentLoaded", () => {
+
+            const formLogin = document.getElementById("form-login");
+            const formSignup = document.getElementById("form-signup");
+            const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+            function setError(inputElement) {
+                let parent = inputElement.parentElement;
+                if (parent.classList.contains("input-with-icon")) {
+                    parent = parent.parentElement;
+                }
+                parent.classList.add("error");
+            }
+
+            function clearErrors(form) {
+                form.querySelectorAll(".input-group").forEach(group => {
+                    group.classList.remove("error");
+                });
+            }
+
+            if (formLogin) {
+                const btnSubmitLogin = document.getElementById("btn-submit-login");
+
+                formLogin.addEventListener("submit", (e) => {
+                    e.preventDefault();
+                    let isValid = true;
+                    clearErrors(formLogin);
+
+                    const email = document.getElementById("loginEmail");
+                    const password = document.getElementById("loginPassword");
+
+                    if (email.value.trim() === "" || !email.value.match(emailPattern)) {
+                        setError(email);
+                        isValid = false;
+                    }
+
+                    if (password.value.trim() === "") {
+                        setError(password);
+                        isValid = false;
+                    }
+
+                    if (isValid) {
+                        const originalBtnText = btnSubmitLogin.innerHTML;
+                        btnSubmitLogin.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Authenticating...';
+                        btnSubmitLogin.style.pointerEvents = "none";
+
+                        setTimeout(() => {
+                            btnSubmitLogin.innerHTML = '<i class="fa-solid fa-check"></i> Success! Redirecting...';
+                            btnSubmitLogin.style.backgroundColor = "#22c55e";
+                            btnSubmitLogin.style.borderColor = "#22c55e";
+                            btnSubmitLogin.style.color = "#fff";
+
+                            window.location.href = "404page.html";
+                        }, 1000);
+                    }
+                });
+            }
+
+            if (formSignup) {
+                const btnSubmitSignup = document.getElementById("btn-submit-signup");
+
+                formSignup.addEventListener("submit", (e) => {
+                    e.preventDefault();
+                    let isValid = true;
+                    clearErrors(formSignup);
+
+                    const firstName = document.getElementById("signupFirstName");
+                    const lastName = document.getElementById("signupLastName");
+                    const email = document.getElementById("signupEmail");
+                    const password = document.getElementById("signupPassword");
+
+                    if (firstName.value.trim() === "") { setError(firstName); isValid = false; }
+                    if (lastName.value.trim() === "") { setError(lastName); isValid = false; }
+
+                    if (email.value.trim() === "" || !email.value.match(emailPattern)) {
+                        setError(email);
+                        isValid = false;
+                    }
+
+                    if (password.value.trim().length < 8) {
+                        setError(password);
+                        isValid = false;
+                    }
+
+                    if (isValid) {
+                        btnSubmitSignup.innerHTML = '<i class="fa-solid fa-check"></i> Account Created!';
+                        btnSubmitSignup.style.backgroundColor = "#22c55e";
+                        btnSubmitSignup.style.borderColor = "#22c55e";
+                        btnSubmitSignup.style.color = "#fff";
+
+                        setTimeout(() => {
+                            formSignup.reset();
+                            setTimeout(() => { document.getElementById('btn-login').click(); }, 1000);
+                        }, 1000);
+                    }
+                });
+            }
+
+            const allAuthInputs = document.querySelectorAll(".auth-form input");
+
+            allAuthInputs.forEach(input => {
+                input.addEventListener("input", () => {
+                    let parent = input.parentElement;
+                    if (parent.classList.contains("input-with-icon")) {
+                        parent = parent.parentElement;
+                    }
+                    if (parent.classList.contains("error")) {
+                        parent.classList.remove("error");
+                    }
+                });
+            });
+
+        });
+    </script>
+</body>
+
+</html>
